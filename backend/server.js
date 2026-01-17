@@ -170,6 +170,11 @@ app.post('/api/contact', async (req, res) => {
   }
 });
 
+app.get('/', (req, res) => {
+  res.status(200).json({ status: 'ok', message: 'E-Portfoilo Backend Server is running' });
+});
+
+
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
 });
