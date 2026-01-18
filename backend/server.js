@@ -21,7 +21,7 @@ const transporter = nodemailer.createTransport({
 
 // Contact endpoint
 app.post('/api/contact', async (req, res) => {
-  const { name, email, message } = req.body;
+  const { name, email, subject, message } = req.body;
 
   try {
     // Email to portfolio owner
@@ -56,6 +56,11 @@ app.post('/api/contact', async (req, res) => {
                     <h3 style="margin: 0; color: #1f2937; font-size: 20px; font-weight: 600;">${name}</h3>
                     <p style="margin: 5px 0 0 0; color: #6b7280; font-size: 14px;">${email}</p>
                   </div>
+                </div>
+
+                <div style="margin-bottom: 20px;">
+                  <h4 style="margin: 0 0 10px 0; color: #374151; font-size: 16px; font-weight: 600;">📌 Subject:</h4>
+                  <p style="margin: 0; color: #4b5563; font-size: 14px;">${subject}</p>
                 </div>
 
                 <div style="background: white; border-radius: 8px; padding: 20px; border-left: 4px solid #7c3aed; box-shadow: 0 2px 8px rgba(0,0,0,0.05);">
