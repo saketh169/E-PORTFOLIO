@@ -1,6 +1,6 @@
 import React from "react";
 import { HashRouter } from "react-router-dom";
-import Nav from "./components/Nav";
+import Header from "./components/Header";
 import Intro from "./pages/Intro";
 import About from "./pages/About";
 import Education from "./pages/Education";
@@ -13,7 +13,7 @@ import Footer from "./components/Footer";
 function App() {
   return (
     <HashRouter>
-      <Nav />
+      <Header />
       <Intro />
       <About />
       <Education />

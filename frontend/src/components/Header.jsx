@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
-function Nav() {
+function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const [activeSection, setActiveSection] = useState('intro');
@@ -131,4 +131,4 @@ function Nav() {
   );
 }
 
-export default Nav;
+export default Header;
