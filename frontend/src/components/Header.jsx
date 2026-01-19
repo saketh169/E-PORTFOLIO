@@ -36,13 +36,13 @@ function Header() {
   };
 
   const navItems = [
-    { id: 'intro', label: 'Home', icon: '🏠' },
-    { id: 'about', label: 'Personal', icon: '👤' },
-    { id: 'education', label: 'Education', icon: '🎓' },
-    { id: 'skills', label: 'Skills', icon: '💡' },
-    { id: 'experience', label: 'Experience', icon: '💼' },
-    { id: 'achievements', label: 'Achievements', icon: '🏆' },
-    { id: 'contact', label: 'Contact', icon: '📧' },
+    { id: 'intro', label: 'Home', icon: 'fas fa-home' },
+    { id: 'about', label: 'Personal', icon: 'fas fa-user' },
+    { id: 'education', label: 'Education', icon: 'fas fa-graduation-cap' },
+    { id: 'skills', label: 'Skills', icon: 'fas fa-lightbulb' },
+    { id: 'experience', label: 'Experience', icon: 'fas fa-briefcase' },
+    { id: 'achievements', label: 'Achievements', icon: 'fas fa-trophy' },
+    { id: 'contact', label: 'Contact', icon: 'fas fa-envelope' },
   ];
 
   return (
@@ -118,7 +118,7 @@ function Header() {
                         : 'text-gray-700 hover:text-purple-600 hover:bg-purple-50'
                     }`}
                   >
-                    <span className="mr-3">{item.icon}</span>
+                    <i className={`${item.icon} mr-3 text-lg`}></i>
                     {item.label}
                   </button>
                 </li>

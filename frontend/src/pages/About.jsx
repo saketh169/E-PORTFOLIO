@@ -20,7 +20,7 @@ function About() {
               <div className="space-y-8">
                 <div className="flex items-center space-x-4 mb-6">
                   <div className="w-16 h-16 bg-linear-to-br from-purple-500 to-pink-500 rounded-2xl flex items-center justify-center shadow-lg">
-                    <span className="text-3xl">👋</span>
+                    <i className="fas fa-user text-3xl text-white"></i>
                   </div>
                   <h3 className="text-3xl font-bold text-gray-800">About Me</h3>
                 </div>
@@ -32,21 +32,21 @@ function About() {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6 pt-6">
                   <div className="space-y-4">
                     <div className="flex items-center p-4 bg-purple-50 rounded-xl hover:bg-purple-100 transition-colors">
-                      <span className="text-2xl mr-4">👤</span>
+                      <i className="fas fa-user text-2xl mr-4 text-purple-600"></i>
                       <div>
                         <p className="text-sm text-purple-600 font-medium">Name</p>
                         <p className="text-gray-800 font-semibold">Saketh Pabbu</p>
                       </div>
                     </div>
                     <div className="flex items-center p-4 bg-purple-50 rounded-xl hover:bg-purple-100 transition-colors">
-                      <span className="text-2xl mr-4">🎂</span>
+                      <i className="fas fa-birthday-cake text-2xl mr-4 text-purple-600"></i>
                       <div>
                         <p className="text-sm text-purple-600 font-medium">Age</p>
                         <p className="text-gray-800 font-semibold">19 Years</p>
                       </div>
                     </div>
                     <div className="flex items-center p-4 bg-purple-50 rounded-xl hover:bg-purple-100 transition-colors">
-                      <span className="text-2xl mr-4">📍</span>
+                      <i className="fas fa-map-marker-alt text-2xl mr-4 text-purple-600"></i>
                       <div>
                         <p className="text-sm text-purple-600 font-medium">Location</p>
                         <p className="text-gray-800 font-semibold">Nellore, Andhra Pradesh, India</p>
@@ -55,21 +55,21 @@ function About() {
                   </div>
                   <div className="space-y-4">
                     <div className="flex items-center p-4 bg-purple-50 rounded-xl hover:bg-purple-100 transition-colors">
-                      <span className="text-2xl mr-4">📧</span>
+                      <i className="fas fa-envelope text-2xl mr-4 text-purple-600"></i>
                       <div>
                         <p className="text-sm text-purple-600 font-medium">Email</p>
                         <p className="text-gray-800 font-semibold">sakethpabbu.works@gmail.com</p>
                       </div>
                     </div>
                     <div className="flex items-center p-4 bg-purple-50 rounded-xl hover:bg-purple-100 transition-colors">
-                      <span className="text-2xl mr-4">📱</span>
+                      <i className="fas fa-phone text-2xl mr-4 text-purple-600"></i>
                       <div>
                         <p className="text-sm text-purple-600 font-medium">Phone</p>
                         <p className="text-gray-800 font-semibold">+91 7075783143</p>
                       </div>
                     </div>
                     <div className="flex items-center p-4 bg-purple-50 rounded-xl hover:bg-purple-100 transition-colors">
-                      <span className="text-2xl mr-4">🎓</span>
+                      <i className="fas fa-graduation-cap text-2xl mr-4 text-purple-600"></i>
                       <div>
                         <p className="text-sm text-purple-600 font-medium">Education</p>
                         <p className="text-gray-800 font-semibold">B.Tech CSE (UG-3) @ IIIT SriCity</p>
@@ -80,7 +80,7 @@ function About() {
                 
                 <div className="mt-6 p-4 bg-linear-to-r from-purple-500 to-pink-500 rounded-xl text-white">
                   <div className="flex items-center">
-                    <span className="text-2xl mr-3">🚀</span>
+                    <i className="fas fa-rocket text-2xl mr-3"></i>
                     <div>
                       <p className="font-semibold">Current Status</p>
                       <p className="text-purple-100">Actively Seeking Internship Opportunities</p>
@@ -104,25 +104,25 @@ function About() {
           <div className="space-y-6 max-w-4xl mx-auto">
             {[
               {
-                icon: "🎯",
+                icon: "fas fa-bullseye",
                 text: "I'm a third-year Computer Science student passionate about building innovative tech solutions and actively exploring AI, machine learning, and data science."
               },
               {
-                icon: "💻",
+                icon: "fas fa-laptop",
                 text: "As a passionate Computer Science student, I am driven by a love for creating impactful technology through web development, data science, and machine learning. My proficiency in Java, C, and Python has been sharpened by solving over 300 algorithmic challenges on LeetCode. I excel at building user-friendly web applications using the MERN stack."
               },
               {
-                icon: "🤝",
+                icon: "fas fa-handshake",
                 text: "I thrive on collaboration and continuous learning, leveraging my leadership, analytical, and communication skills to drive projects forward. My academic projects demonstrate my ability to blend technical expertise with real-world applications."
               },
               {
-                icon: "🌟",
+                icon: "fas fa-star",
                 text: "With a strong foundation in CS fundamentals and a commitment to innovation, I aim to contribute to cutting-edge projects in data science and machine learning, creating technology that makes a meaningful difference in the world."
               }
             ].map((item, index) => (
               <div key={index} className="bg-white rounded-2xl shadow-lg p-6 border-l-4 border-purple-500 card-hover group">
                 <div className="flex items-start">
-                  <span className="text-3xl mr-4 group-hover:scale-110 transition-transform">{item.icon}</span>
+                  <i className={`${item.icon} text-3xl mr-4 group-hover:scale-110 transition-transform`}></i>
                   <p className="text-gray-600 leading-relaxed">{item.text}</p>
                 </div>
               </div>

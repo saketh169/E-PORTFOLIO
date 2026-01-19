@@ -3,7 +3,7 @@ import React from 'react';
 function Education() {
   const educationData = [
     {
-      icon: "🎓",
+      icon: "fas fa-graduation-cap",
       degree: "Bachelor of Technology - BTech, Computer Science",
       institution: "Indian Institute of Information Technology, SriCity",
       grade: "CGPA: 9.46",
@@ -12,7 +12,7 @@ function Education() {
       highlights: ["Data Structures", "Algorithms", "Full-Stack Development", "Database Systems"]
     },
     {
-      icon: "📚",
+      icon: "fas fa-book",
       degree: "Intermediate / 12th Grade",
       institution: "Narayana Junior College, India",
       grade: "Grade: 9.84",
@@ -21,7 +21,7 @@ function Education() {
       highlights: ["Mathematics", "Physics", "Chemistry", "JEE Preparation"]
     },
     {
-      icon: "🏫",
+      icon: "fas fa-school",
       degree: "10th Grade",
       institution: "Sri Netaji M.S.R Pilot High School",
       grade: "Grade: 10",
@@ -44,7 +44,7 @@ function Education() {
           <div className="w-24 h-1 bg-linear-to-r from-purple-600 to-pink-600 mx-auto mt-4 rounded-full"></div>
         </div>
         
-        <div className="relative max-w-4xl mx-auto">
+        <div className="relative">
           {/* Timeline line */}
           <div className="absolute left-8 md:left-1/2 top-0 bottom-0 w-1 bg-linear-to-b from-purple-500 via-pink-500 to-purple-500 rounded-full"></div>
 
@@ -53,12 +53,12 @@ function Education() {
               <div key={index} className={`relative flex flex-col md:flex-row items-start ${index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'}`}>
                 {/* Timeline dot */}
                 <div className="absolute left-8 md:left-1/2 -translate-x-1/2 w-16 h-16 bg-linear-to-br from-purple-500 to-pink-500 rounded-full flex items-center justify-center shadow-lg z-10 timeline-pulse">
-                  <span className="text-2xl">{edu.icon}</span>
+                  <i className={`${edu.icon} text-2xl text-white`}></i>
                 </div>
                 
                 {/* Content card */}
                 <div className={`ml-24 md:ml-0 md:w-1/2 ${index % 2 === 0 ? 'md:pr-16' : 'md:pl-16'}`}>
-                  <div className="bg-white/90 backdrop-blur-sm p-6 rounded-2xl shadow-xl border border-purple-100 card-hover group">
+                  <div className="bg-white/90 backdrop-blur-sm p-8 rounded-3xl shadow-xl border border-purple-100 card-hover group">
                     <div className="flex flex-wrap justify-between items-start mb-4">
                       <div className="flex-1">
                         <h3 className="text-xl font-bold text-gray-800 group-hover:text-purple-600 transition-colors">{edu.degree}</h3>

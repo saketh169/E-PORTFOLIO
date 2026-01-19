@@ -26,9 +26,6 @@ function Intro() {
             <p className="text-xl md:text-2xl text-purple-100 font-light">
               A Passionate <span className="font-semibold text-yellow-300">Full-Stack Developer</span>
             </p>
-            <div className="text-purple-200 text-base md:text-lg max-w-lg">
-             
-            </div>
             <div className="flex flex-wrap gap-4 pt-4">
               <button 
                 onClick={() => document.getElementById('contact').scrollIntoView({ behavior: 'smooth' })} 
@@ -48,11 +45,11 @@ function Intro() {
           {/* Middle - Code Block & Icons */}
           <div className="flex flex-col items-center space-y-6 lg:space-y-8 animate-fade-in-up xl:col-span-1 lg:order-2 xl:order-0">
             <div className="flex justify-center space-x-2 lg:space-x-3">
-              <div className="text-3xl md:text-4xl lg:text-5xl animate-float">💻</div>
-              <div className="text-3xl md:text-4xl lg:text-5xl animate-float delay-100">🚀</div>
-              <div className="text-3xl md:text-4xl lg:text-5xl animate-float delay-200">⚡</div>
-              <div className="text-3xl md:text-4xl lg:text-5xl animate-float delay-300">🎯</div>
-              <div className="text-3xl md:text-4xl lg:text-5xl animate-float delay-500">🌟</div>
+              <div className="text-3xl md:text-4xl lg:text-5xl"><i className="fas fa-laptop-code"></i></div>
+              <div className="text-3xl md:text-4xl lg:text-5xl"><i className="fas fa-rocket"></i></div>
+              <div className="text-3xl md:text-4xl lg:text-5xl"><i className="fas fa-bolt"></i></div>
+              <div className="text-3xl md:text-4xl lg:text-5xl"><i className="fas fa-bullseye"></i></div>
+              <div className="text-3xl md:text-4xl lg:text-5xl"><i className="fas fa-star"></i></div>
             </div>
             <div className="bg-gray-900/90 backdrop-blur-xl p-3 md:p-4 lg:p-6 rounded-2xl font-mono text-xs md:text-sm shadow-2xl border border-purple-500/30 w-full max-w-xs md:max-w-sm lg:max-w-md card-hover mx-auto">
               <div className="flex items-center space-x-2 mb-3 lg:mb-4 pb-2 lg:pb-3 border-b border-gray-700">
@@ -65,7 +62,7 @@ function Intro() {
               <div className="ml-3 md:ml-4 text-gray-300 text-xs md:text-sm">name: <span className="text-green-400">"Saketh Pabbu"</span>,</div>
               <div className="ml-3 md:ml-4 text-gray-300 text-xs md:text-sm">passion: <span className="text-green-400">"Full-Stack Dev"</span>,</div>
               <div className="ml-3 md:ml-4 text-gray-300 text-xs md:text-sm">skills: [</div>
-              <div className="ml-6 md:ml-8 text-yellow-400 text-xs md:text-sm">"React", "Node.js", "Python"</div>
+              <div className="ml-6 md:ml-8 text-yellow-400 text-xs md:text-sm">"React", "Java", "Python", "EJS"</div>
               <div className="ml-3 md:ml-4 text-gray-300 text-xs md:text-sm">],</div>
               <div className="ml-3 md:ml-4 text-gray-300 text-xs md:text-sm">status: <span className="text-green-400">"Available"</span></div>
               <div className="text-purple-400 text-xs md:text-sm">{'}'};</div>
@@ -85,15 +82,12 @@ function Intro() {
           </div>
         </div>
         
-        {/* Scroll indicator */}
         <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
           <button 
             onClick={() => document.getElementById('about').scrollIntoView({ behavior: 'smooth' })}
             className="text-white/60 hover:text-white transition-colors"
           >
-            <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
-            </svg>
+            <i className="fas fa-chevron-down text-2xl"></i>
           </button>
         </div>
       </div>

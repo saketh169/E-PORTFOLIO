@@ -130,7 +130,7 @@ function Footer() {
               &copy; {new Date().getFullYear()} Saketh Pabbu. All Rights Reserved.
             </p>
             <p className="text-purple-400 font-semibold flex items-center">
-              <span className="mr-2">✨</span> Building Tomorrow's Technology Today <span className="ml-2">🚀</span>
+              <i className="fas fa-sparkles mr-2"></i> Building Tomorrow's Technology Today <i className="fas fa-rocket ml-2"></i>
             </p>
           </div>
         </div>

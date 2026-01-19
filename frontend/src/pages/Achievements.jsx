@@ -3,7 +3,7 @@ import React from 'react';
 function Achievements() {
   const achievements = [
     {
-      icon: "🏆",
+      icon: "fas fa-trophy",
       title: "Agentica AI Hackathon 2025",
       subtitle: "1st Runner-Up, 2025",
       description: "Won a cash prize of ₹20,000 for creating an AI-Powered Intelligent Document Management System.",
@@ -11,35 +11,35 @@ function Achievements() {
       highlight: true
     },
     {
-      icon: "🎯",
+      icon: "fas fa-bullseye",
       title: "Technova Coding Competition",
       subtitle: "Qualified Coding Round, 2024",
       description: "Successfully qualified for the coding round, demonstrating strong problem-solving and algorithmic skills.",
       color: "from-purple-500 to-indigo-600"
     },
     {
-      icon: "💻",
+      icon: "fas fa-laptop",
       title: "LeetCode Streak Badges",
       subtitle: "2023–Present",
       description: "Solved over 300 algorithmic problems, earning 50-day and 100-day active streak badges.",
       color: "from-green-500 to-emerald-600"
     },
     {
-      icon: "☁️",
+      icon: "fab fa-cloud",
       title: "Google Cloud Skill Boost",
       subtitle: "2023",
-      description: "Received branded goodies for completing advanced cloud technology labs.",
+      description: "Completed many skills badges and arcade games, achieving the Arcade Trooper milestone 2 times in events.",
       color: "from-blue-500 to-cyan-600"
     },
     {
-      icon: "🥇",
+      icon: "fas fa-medal",
       title: "CodeX by Gradient Club",
       subtitle: "2023",
       description: "Achieved 11th place in a competitive DSA Coding Competition among skilled programmers.",
       color: "from-pink-500 to-rose-600"
     },
     {
-      icon: "🎯",
+      icon: "fas fa-bullseye",
       title: "Campus Ambassador, Techfest IIT Bombay",
       subtitle: "2022",
       description: "Secured 172nd rank among top 1000 ambassadors, earning 7500 points for festival promotion.",
@@ -49,7 +49,7 @@ function Achievements() {
 
   const projects = [
     {
-      icon: "🖼️",
+      icon: "fas fa-image",
       category: "BTP Project",
       title: "Image Copy Detection using CNN, CV, DL",
       description: "Developed an advanced image copy detection system using Convolutional Neural Networks (CNN), Computer Vision (CV), and Deep Learning (DL) techniques for accurate image plagiarism detection and copyright protection.",
@@ -57,7 +57,7 @@ function Achievements() {
       tags: ["CNN", "Computer Vision", "Deep Learning", "Image Processing", "Python"]
     },
     {
-      icon: "☁️",
+      icon: "fas fa-sitemap",
       category: "Cloud Computing",
       title: "A Hybrid Load Balancing Method to Achieve Quality of Service (QoS) in Cloud-based Environment",
       description: "Developed a hybrid load balancing algorithm combining Round Robin (RR) and Ant Colony Optimization (ACO) techniques to achieve optimal Quality of Service in cloud environments. Implemented on AWS platform.",
@@ -65,7 +65,7 @@ function Achievements() {
       tags: ["Cloud Computing", "Load Balancing", "AWS", "QoS", "ACO", "RR"]
     },
     {
-      icon: "🚗",
+      icon: "fas fa-car",
       category: "UVS Project",
       title: "Unmanned Vehicle Scheduling System",
       description: "Developed a scheduling system for unmanned vehicles using RDR and RAR techniques, inspired by IEEE Transactions. Ensures optimal resource utilization and scalability.",
@@ -73,7 +73,7 @@ function Achievements() {
       tags: ["Python", "AI", "Scheduling"]
     },
     {
-      icon: "💻",
+      icon: "fas fa-laptop",
       category: "Nutri Connect",
       title: "Nutri Connect Web Application",
       description: "Built a full-stack web app for digital nutrition consultations, featuring booking and personalized diet planning.",
@@ -81,7 +81,7 @@ function Achievements() {
       tags: ["MERN Stack", "Full-Stack", "Healthcare"]
     },
     {
-      icon: "🌐",
+      icon: "fas fa-globe",
       category: "IOTA Project",
       title: "IoT-based Smart Jacket",
       description: "Creating an IoT-based smart jacket for ML-powered real-time data analytics with sensors and machine learning algorithms.",
@@ -95,13 +95,13 @@ function Achievements() {
       title: "Decoration Team Member",
       organization: "Abhisarga Fest | 2024",
       description: "Contributed creatively to enhance the visual appeal and ambiance of the college fest through innovative designs.",
-      icon: "🎨"
+      icon: "fas fa-palette"
     },
     {
       title: "Independence Day Meraki Team",
       organization: "College Event | 2023",
       description: "Worked on the decoration team for college Independence Day celebrations, creating a festive and patriotic ambiance.",
-      icon: "🇮🇳"
+      icon: "fas fa-flag"
     }
   ];
 
@@ -137,7 +137,7 @@ function Achievements() {
                 )}
                 
                 <div className={`w-16 h-16 bg-linear-to-br ${achievement.color} rounded-2xl flex items-center justify-center text-3xl mb-4 shadow-lg group-hover:scale-110 transition-transform duration-300`}>
-                  {achievement.icon}
+                  <i className={`${achievement.icon} text-white`}></i>
                 </div>
                 
                 <h3 className="text-xl font-bold text-gray-800 mb-2 group-hover:text-purple-700 transition-colors">{achievement.title}</h3>
@@ -170,7 +170,7 @@ function Achievements() {
                 className="group bg-white/10 backdrop-blur-sm rounded-3xl p-8 border border-purple-400/30 hover:border-purple-400 hover:bg-white/15 transition-all duration-500 transform hover:-translate-y-2"
               >
                 <div className="flex items-center justify-between mb-6">
-                  <span className="text-5xl group-hover:scale-110 transition-transform duration-300">{project.icon}</span>
+                  <i className={`${project.icon} text-purple-300 text-5xl group-hover:scale-110 transition-transform duration-300`}></i>
                   <span className="px-3 py-1 bg-purple-500/30 text-purple-200 text-sm rounded-full">{project.category}</span>
                 </div>
                 
@@ -222,7 +222,7 @@ function Achievements() {
                 className="group bg-white rounded-3xl shadow-xl p-8 border border-purple-100 hover:border-purple-300 transition-all duration-500 transform hover:-translate-y-2 hover:shadow-2xl"
               >
                 <div className="flex items-start gap-4">
-                  <span className="text-4xl group-hover:scale-110 transition-transform duration-300">{item.icon}</span>
+                  <i className={`${item.icon} text-4xl group-hover:scale-110 transition-transform duration-300`}></i>
                   <div>
                     <h3 className="text-xl font-bold text-gray-800 mb-1">{item.title}</h3>
                     <p className="text-purple-600 font-semibold mb-3">{item.organization}</p>

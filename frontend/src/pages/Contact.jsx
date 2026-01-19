@@ -47,21 +47,21 @@ function Contact() {
             <div className="space-y-8">
               <div className="bg-white/80 backdrop-blur-sm rounded-3xl shadow-xl p-8 border border-purple-100">
                 <h3 className="text-2xl font-bold text-gray-800 mb-6 flex items-center">
-                  <span className="text-3xl mr-3">📬</span> Let's Connect
+                  <i className="fas fa-mailbox text-3xl mr-3"></i> Let's Connect
                 </h3>
                 
                 <div className="space-y-6">
                   {[
-                    { icon: "📧", label: "Email", value: "sakethpabbu.works@gmail.com", link: "mailto:sakethpabbu.works@gmail.com" },
-                    { icon: "📱", label: "Phone", value: "+91-7075783143", link: "tel:+917075783143" },
-                    { icon: "📍", label: "Location", value: "Nellore, Andhra Pradesh, India", link: null }
+                    { icon: "fas fa-envelope", label: "Email", value: "sakethpabbu.works@gmail.com", link: "mailto:sakethpabbu.works@gmail.com" },
+                    { icon: "fas fa-phone", label: "Phone", value: "+91-7075783143", link: "tel:+917075783143" },
+                    { icon: "fas fa-map-marker-alt", label: "Location", value: "Nellore, Andhra Pradesh, India", link: null }
                   ].map((item, idx) => (
                     <a 
                       key={idx} 
                       href={item.link || '#'} 
                       className="flex items-center p-4 bg-purple-50 rounded-2xl hover:bg-purple-100 transition-all duration-300 group"
                     >
-                      <span className="text-3xl mr-4 group-hover:scale-110 transition-transform">{item.icon}</span>
+                      <i className={`${item.icon} text-3xl mr-4 group-hover:scale-110 transition-transform`}></i>
                       <div>
                         <p className="text-sm text-purple-600 font-medium">{item.label}</p>
                         <p className="text-gray-800 font-semibold">{item.value}</p>
@@ -78,7 +78,7 @@ function Contact() {
                     download="Saketh_Pabbu_Resume.pdf"
                     className="inline-flex items-center px-6 py-3 bg-linear-to-r from-purple-600 to-pink-600 text-white rounded-xl font-semibold hover:shadow-lg hover:shadow-purple-500/30 transition-all duration-300 hover:scale-105"
                   >
-                    <span className="text-xl mr-3">📄</span>
+                    <i className="fas fa-file text-xl mr-3"></i>
                     Download CV
                   </a>
                 </div>
@@ -112,7 +112,7 @@ function Contact() {
             {/* Contact Form */}
             <div className="bg-white/80 backdrop-blur-sm rounded-3xl shadow-xl p-8 border border-purple-100">
               <h3 className="text-2xl font-bold text-gray-800 mb-6 flex items-center">
-                <span className="text-3xl mr-3">✉️</span> Send a Message
+                <i className="fas fa-envelope-open text-3xl mr-3"></i> Send a Message
               </h3>
               
               <form onSubmit={handleSubmit} className="space-y-5">
@@ -176,7 +176,7 @@ function Contact() {
                     </span>
                   ) : (
                     <span className="flex items-center justify-center">
-                      Send Message <span className="ml-2">🚀</span>
+                      Send Message <i className="fas fa-rocket ml-2"></i>
                     </span>
                   )}
                 </button>
@@ -205,13 +205,13 @@ function Contact() {
               download
               className="btn-shine inline-flex items-center justify-center px-8 py-4 bg-white text-purple-700 rounded-full font-bold text-lg hover:bg-purple-50 transition-all duration-300 shadow-xl"
             >
-              <span className="mr-2">📄</span> Download Resume
+              <i className="fas fa-file mr-2"></i> Download Resume
             </a>
             <button 
               onClick={() => document.getElementById('contact').scrollIntoView({ behavior: 'smooth' })}
               className="inline-flex items-center justify-center px-8 py-4 border-2 border-white/30 text-white rounded-full font-bold text-lg hover:bg-white/10 transition-all duration-300"
             >
-              <span className="mr-2">💬</span> Request References
+              <i className="fas fa-comments mr-2"></i> Request References
             </button>
           </div>
         </div>

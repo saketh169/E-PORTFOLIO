@@ -6,7 +6,7 @@ function Experience() {
       title: "Full Stack Web Development and AI-Integrated Marketing Strategies Intern",
       company: "Myna Seva Foundation",
       period: "Jul 2025 - Aug 2025",
-      icon: "💼",
+      icon: "fas fa-briefcase",
       color: "from-purple-500 to-indigo-600",
       description: "Developed dynamic web applications using Full-Stack Development technologies, including HTML, CSS, JavaScript, and MERN Stack. Integrated AI-driven marketing strategies to enhance user engagement.",
       skills: ["Full-Stack Development", "HTML", "CSS", "JavaScript", "MERN Stack", "AI Marketing"]
@@ -15,7 +15,7 @@ function Experience() {
       title: "Decoration Team Member",
       company: "Abhisarga",
       period: "Mar 2025 - Apr 2025",
-      icon: "🎨",
+      icon: "fas fa-palette",
       color: "from-pink-500 to-rose-600",
       description: "Contributed to event planning and execution, focusing on creative design and logistics. Applied Team Leadership and Communication Skills to coordinate with team members.",
       skills: ["Team Leadership", "Communication", "Event Planning", "Creative Design"]
@@ -24,7 +24,7 @@ function Experience() {
       title: "Campus Ambassador Program",
       company: "Techfest, IIT Bombay",
       period: "Jul 2024 - Dec 2024",
-      icon: "🚀",
+      icon: "fas fa-rocket",
       color: "from-blue-500 to-cyan-600",
       description: "Promoted Techfest across colleges, earning 7500 points and ranking in the top 1000 ambassadors. Utilized Communication Skills and Event Management.",
       skills: ["Communication", "Event Management", "Marketing", "Leadership"]
@@ -33,7 +33,7 @@ function Experience() {
       title: "Python Internship",
       company: "CodSoft",
       period: "Jul 2024 - Aug 2024",
-      icon: "🐍",
+      icon: "fab fa-python",
       color: "from-green-500 to-emerald-600",
       description: "Built and optimized Python-based projects, applying Python programming skills to develop efficient solutions. Collaborated on real-world applications.",
       skills: ["Python", "Problem Solving", "Data Structures", "APIs"]
@@ -69,7 +69,7 @@ function Experience() {
                   <div className={`bg-white rounded-3xl shadow-xl p-8 border border-purple-100 hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 ${index % 2 === 0 ? 'md:mr-8' : 'md:ml-8'}`}>
                     <div className="flex items-start justify-between mb-4">
                       <div className={`w-16 h-16 bg-linear-to-br ${exp.color} rounded-2xl flex items-center justify-center text-3xl shadow-lg`}>
-                        {exp.icon}
+                        <i className={`${exp.icon} text-white`}></i>
                       </div>
                       <span className="text-sm font-medium text-purple-600 bg-purple-100 px-4 py-2 rounded-full">
                         {exp.period}
