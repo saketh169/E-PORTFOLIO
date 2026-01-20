@@ -1,4 +1,4 @@
-import React from 'react';
+
 
 function Intro() {
   return (
@@ -43,29 +43,45 @@ function Intro() {
           </div>
           
           {/* Middle - Code Block & Icons */}
-          <div className="flex flex-col items-center space-y-6 lg:space-y-8 animate-fade-in-up xl:col-span-1 lg:order-2 xl:order-0">
-            <div className="flex justify-center space-x-2 lg:space-x-3">
-              <div className="text-3xl md:text-4xl lg:text-5xl"><i className="fas fa-laptop-code"></i></div>
-              <div className="text-3xl md:text-4xl lg:text-5xl"><i className="fas fa-rocket"></i></div>
-              <div className="text-3xl md:text-4xl lg:text-5xl"><i className="fas fa-bolt"></i></div>
-              <div className="text-3xl md:text-4xl lg:text-5xl"><i className="fas fa-bullseye"></i></div>
-              <div className="text-3xl md:text-4xl lg:text-5xl"><i className="fas fa-star"></i></div>
-            </div>
-            <div className="bg-gray-900/90 backdrop-blur-xl p-3 md:p-4 lg:p-6 rounded-2xl font-mono text-xs md:text-sm shadow-2xl border border-purple-500/30 w-full max-w-xs md:max-w-sm lg:max-w-md card-hover mx-auto">
-              <div className="flex items-center space-x-2 mb-3 lg:mb-4 pb-2 lg:pb-3 border-b border-gray-700">
-                <div className="w-3 h-3 rounded-full bg-red-500"></div>
-                <div className="w-3 h-3 rounded-full bg-yellow-500"></div>
-                <div className="w-3 h-3 rounded-full bg-green-500"></div>
-                <span className="text-gray-400 text-xs ml-2">developer.js</span>
+          <div className="flex flex-col items-center space-y-6 lg:space-y-8 animate-fade-in-up xl:col-span-1 lg:order-2 xl:order-0 relative">
+            <div className="relative">
+              {/* Code Block */}
+              <div className="bg-gray-900/90 backdrop-blur-xl p-3 md:p-4 lg:p-6 rounded-2xl font-mono text-xs md:text-sm shadow-2xl border border-purple-500/30 w-full max-w-xs md:max-w-sm lg:max-w-md card-hover mx-auto relative">
+                <div className="flex items-center space-x-2 mb-3 lg:mb-4 pb-2 lg:pb-3 border-b border-gray-700">
+                  <div className="w-3 h-3 rounded-full bg-red-500"></div>
+                  <div className="w-3 h-3 rounded-full bg-yellow-500"></div>
+                  <div className="w-3 h-3 rounded-full bg-green-500"></div>
+                  <span className="text-gray-400 text-xs ml-2">developer.js</span>
+                </div>
+                <div className="text-purple-400 text-xs md:text-sm">const <span className="text-blue-400">developer</span> = {'{'}</div>
+                <div className="ml-3 md:ml-4 text-gray-300 text-xs md:text-sm">name: <span className="text-green-400">"Saketh Pabbu"</span>,</div>
+                <div className="ml-3 md:ml-4 text-gray-300 text-xs md:text-sm">passion: <span className="text-green-400">"Full-Stack Dev"</span>,</div>
+                <div className="ml-3 md:ml-4 text-gray-300 text-xs md:text-sm">skills: [</div>
+                <div className="ml-6 md:ml-8 text-yellow-400 text-xs md:text-sm">"React", "Java", "Python", "Express"</div>
+                <div className="ml-3 md:ml-4 text-gray-300 text-xs md:text-sm">],</div>
+                <div className="ml-3 md:ml-4 text-gray-300 text-xs md:text-sm">status: <span className="text-green-400">"Available"</span></div>
+                <div className="text-purple-400 text-xs md:text-sm">{'}'};</div>
               </div>
-              <div className="text-purple-400 text-xs md:text-sm">const <span className="text-blue-400">developer</span> = {'{'}</div>
-              <div className="ml-3 md:ml-4 text-gray-300 text-xs md:text-sm">name: <span className="text-green-400">"Saketh Pabbu"</span>,</div>
-              <div className="ml-3 md:ml-4 text-gray-300 text-xs md:text-sm">passion: <span className="text-green-400">"Full-Stack Dev"</span>,</div>
-              <div className="ml-3 md:ml-4 text-gray-300 text-xs md:text-sm">skills: [</div>
-              <div className="ml-6 md:ml-8 text-yellow-400 text-xs md:text-sm">"React", "Java", "Python", "EJS"</div>
-              <div className="ml-3 md:ml-4 text-gray-300 text-xs md:text-sm">],</div>
-              <div className="ml-3 md:ml-4 text-gray-300 text-xs md:text-sm">status: <span className="text-green-400">"Available"</span></div>
-              <div className="text-purple-400 text-xs md:text-sm">{'}'};</div>
+              {/* Revolving icons in circular orbit */}
+              <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
+                <div className="orbit-container">
+                  <div className="orbit-icon orbit-icon-1">
+                    <i className="fas fa-laptop-code text-purple-300 text-2xl md:text-3xl drop-shadow-lg"></i>
+                  </div>
+                  <div className="orbit-icon orbit-icon-2">
+                    <i className="fas fa-rocket text-pink-300 text-2xl md:text-3xl drop-shadow-lg"></i>
+                  </div>
+                  <div className="orbit-icon orbit-icon-3">
+                    <i className="fas fa-bolt text-yellow-300 text-2xl md:text-3xl drop-shadow-lg"></i>
+                  </div>
+                  <div className="orbit-icon orbit-icon-4">
+                    <i className="fas fa-bullseye text-green-300 text-2xl md:text-3xl drop-shadow-lg"></i>
+                  </div>
+                  <div className="orbit-icon orbit-icon-5">
+                    <i className="fas fa-star text-blue-300 text-2xl md:text-3xl drop-shadow-lg"></i>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
           

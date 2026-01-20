@@ -1,4 +1,13 @@
-import React from 'react';
+
+
+const softSkills = ["Leadership", "Problem-Solving", "Analytical Skills", "Communication", "Presentation", "Team Collaboration"];
+
+const csFundamentals = [
+  { name: "Operating Systems", icon: "fas fa-desktop" },
+  { name: "OOP", icon: "fas fa-building" },
+  { name: "DBMS", icon: "fas fa-archive" },
+  { name: "Computer Networks", icon: "fas fa-network-wired" }
+];
 
 function Skills() {
   const skillCategories = [
@@ -33,7 +42,7 @@ function Skills() {
         { name: "Matlab", icon: "fas fa-chart-bar", level: 70 },
         { name: "AWS", icon: "fab fa-aws", level: 75 },
         { name: "VS Code", icon: "fas fa-code", level: 95 },
-        { name: "IntelliJ IDEA", icon: "fas fa-brain", level: 80 },
+        { name: "IntelliJ IDEA", icon: "fas fa-laptop-code", level: 80 },
         { name: "MySQL", icon: "fas fa-database", level: 85 }
       ]
     },
@@ -44,13 +53,14 @@ function Skills() {
         { name: "NumPy", icon: "fas fa-calculator", level: 80 },
         { name: "Pandas", icon: "fas fa-table", level: 78 },
         { name: "Matplotlib", icon: "fas fa-chart-line", level: 75 },
+        { name: "Seaborn", icon: "fas fa-chart-bar", level: 70 },
         { name: "Tailwind CSS", icon: "fas fa-wind", level: 90 },
-        { name: "Bootstrap", icon: "fas fa-crosshairs", level: 85 }
+        { name: "Bootstrap", icon: "fas fa-crosshairs", level: 85 },
+        { name: "EJS", icon: "fas fa-file-code", level: 75 },
+        { name: "Express", icon: "fas fa-server", level: 80 }
       ]
     }
   ];
-
-  const softSkills = ["Leadership", "Problem-Solving", "Analytical Skills", "Communication", "Presentation", "Team Collaboration"];
 
   return (
     <section id="skills" className="py-16 bg-linear-to-b from-purple-100 to-purple-50 relative overflow-hidden border-b-4 border-purple-300/50">
@@ -97,12 +107,7 @@ function Skills() {
               <h3 className="text-2xl font-bold text-gray-800">CS Fundamentals</h3>
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-              {[
-                { name: "Operating Systems", icon: "fas fa-desktop" },
-                { name: "OOP", icon: "fas fa-building" },
-                { name: "DBMS", icon: "fas fa-archive" },
-                { name: "Computer Networks", icon: "fas fa-network-wired" }
-              ].map((item, idx) => (
+              {csFundamentals.map((item, idx) => (
                 <div key={idx} className="bg-white p-6 rounded-2xl shadow-lg border border-purple-100 text-center card-hover group">
                   <i className={`fas ${item.icon} text-4xl block mb-3 group-hover:scale-110 transition-transform text-purple-600`}></i>
                   <span className="text-lg font-semibold text-gray-800">{item.name}</span>

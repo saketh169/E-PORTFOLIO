@@ -1,4 +1,4 @@
-import React from 'react';
+
 
 function Education() {
   const educationData = [
@@ -6,7 +6,7 @@ function Education() {
       icon: "fas fa-graduation-cap",
       degree: "Bachelor of Technology - BTech, Computer Science",
       institution: "Indian Institute of Information Technology, SriCity",
-      grade: "CGPA: 9.46",
+      grade: "CGPA: 9.33",
       period: "Aug 2023 - Jun 2027",
       description: "Actively learning and growing every day through advanced concepts in Data Structures, Algorithms, Full-Stack Development, and Database Systems. Engaged in competitive programming and tech events to enhance practical skills.",
       highlights: ["Data Structures", "Algorithms", "Full-Stack Development", "Database Systems"]
@@ -58,7 +58,7 @@ function Education() {
                 
                 {/* Content card */}
                 <div className={`ml-24 md:ml-0 md:w-1/2 ${index % 2 === 0 ? 'md:pr-16' : 'md:pl-16'}`}>
-                  <div className="bg-white/90 backdrop-blur-sm p-8 rounded-3xl shadow-xl border border-purple-100 card-hover group">
+                  <div className="bg-white/90 backdrop-blur-sm p-8 rounded-3xl shadow-xl border border-purple-100 card-hover group animate-fade-in-up" style={{ animationDelay: `${index * 0.3}s` }}>
                     <div className="flex flex-wrap justify-between items-start mb-4">
                       <div className="flex-1">
                         <h3 className="text-xl font-bold text-gray-800 group-hover:text-purple-600 transition-colors">{edu.degree}</h3>

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 
 function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -10,7 +10,7 @@ function Header() {
       setIsScrolled(window.scrollY > 50);
       
       // Detect active section
-      const sections = ['intro', 'about', 'education', 'skills', 'experience', 'achievements', 'contact'];
+      const sections = ['intro', 'about', 'education', 'skills', 'experience', 'achievements', 'samples', 'contact'];
       for (const section of sections) {
         const element = document.getElementById(section);
         if (element) {
@@ -42,6 +42,7 @@ function Header() {
     { id: 'skills', label: 'Skills', icon: 'fas fa-lightbulb' },
     { id: 'experience', label: 'Experience', icon: 'fas fa-briefcase' },
     { id: 'achievements', label: 'Achievements', icon: 'fas fa-trophy' },
+    { id: 'samples', label: 'Projects', icon: 'fas fa-project-diagram' },
     { id: 'contact', label: 'Contact', icon: 'fas fa-envelope' },
   ];
 
