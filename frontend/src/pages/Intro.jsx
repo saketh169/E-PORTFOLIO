@@ -1,45 +1,84 @@
+// Social links data
+const socialLinks = [
+  { href: "https://www.linkedin.com/in/saketh-pabbu-14342a291/", icon: "fab fa-linkedin-in", hoverBg: "hover:bg-[#0077B5]" },
+  { href: "https://github.com/saketh169", icon: "fab fa-github", hoverBg: "hover:bg-white hover:text-purple-700" },
+  { href: "https://x.com/PabbuSaketh", icon: "fab fa-twitter", hoverBg: "hover:bg-[#1DA1F2]" },
+  { href: "https://www.facebook.com/share/12MQ4JHgTgA/", icon: "fab fa-facebook", hoverBg: "hover:bg-[#1877F2]" },
+  { href: "https://leetcode.com/u/saketh1706/", icon: "fas fa-code", hoverBg: "hover:bg-[#FFA116] hover:text-black" }
+];
 
+// Scroll helper
+const scrollTo = (id) => document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' });
 
 function Intro() {
   return (
-    <section id="intro" className="min-h-screen bg-linear-to-br from-purple-900 via-purple-700 to-indigo-800 text-white flex items-center pt-32 pb-20 relative overflow-hidden border-b-4 border-purple-500/30">
-      {/* Animated background elements */}
+    <section id="intro" className="min-h-screen bg-linear-to-br from-purple-900 via-purple-700 to-indigo-800 text-white flex items-center pt-24 sm:pt-32 pb-16 sm:pb-20 relative overflow-hidden border-b-4 border-purple-500/30">
+      {/* Animated background */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        <div className="absolute top-20 left-10 w-64 h-64 bg-purple-500/15 rounded-full blur-3xl animate-float"></div>
-        <div className="absolute bottom-20 right-10 w-80 h-80 bg-indigo-500/15 rounded-full blur-3xl animate-float delay-500"></div>
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-pink-500/8 rounded-full blur-3xl"></div>
+        <div className="absolute top-20 left-10 w-48 sm:w-64 h-48 sm:h-64 bg-purple-500/15 rounded-full blur-3xl animate-float" />
+        <div className="absolute bottom-20 right-10 w-64 sm:w-80 h-64 sm:h-80 bg-indigo-500/15 rounded-full blur-3xl animate-float delay-500" />
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-72 sm:w-96 h-72 sm:h-96 bg-pink-500/8 rounded-full blur-3xl" />
       </div>
       
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-8 lg:gap-12 items-center">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
+        <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-6 sm:gap-8 lg:gap-12 items-center">
           {/* Left - Introduction */}
-          <div className="space-y-6 animate-fade-in-left xl:col-span-1 -ml-4 lg:-ml-8">
+          <div className="space-y-4 sm:space-y-6 animate-fade-in-left mt-8 sm:mt-16 xl:col-span-1 px-2 sm:px-0 sm:-ml-4 lg:-ml-8">
             <div className="space-y-2">
-              <p className="text-purple-200 text-lg font-medium tracking-wider uppercase">Welcome to my portfolio</p>
-              <h1 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold leading-tight">
+              <p className="text-purple-200 text-sm sm:text-lg font-medium tracking-wider uppercase">Welcome to my portfolio</p>
+              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold leading-tight">
                 Hello, I'm <br />
                 <span className="bg-linear-to-r from-yellow-300 via-pink-300 to-purple-300 bg-clip-text text-transparent animate-gradient bg-size-[200%_auto]">
                   Saketh Pabbu
                 </span>
               </h1>
             </div>
-            <p className="text-xl md:text-2xl text-purple-100 font-light">
+            <p className="text-lg sm:text-xl md:text-2xl text-purple-100 font-light">
               A Passionate <span className="font-semibold text-yellow-300">Full-Stack Developer</span>
             </p>
-            <div className="flex flex-wrap gap-4 pt-4">
+            
+            {/* CTA Buttons */}
+            <div className="flex flex-wrap gap-3 sm:gap-4 pt-2 sm:pt-4">
               <button 
-                onClick={() => document.getElementById('contact').scrollIntoView({ behavior: 'smooth' })} 
-                className="btn-shine px-6 md:px-8 py-3 md:py-4 bg-white text-purple-700 rounded-full font-bold text-base md:text-lg hover:bg-purple-50 hover:scale-105 transition-all duration-300 shadow-xl shadow-purple-900/30"
+                onClick={() => scrollTo('contact')} 
+                className="btn-shine px-5 sm:px-8 py-2.5 sm:py-4 bg-white text-purple-700 rounded-full font-bold text-sm sm:text-lg hover:bg-purple-50 hover:scale-105 transition-all duration-300 shadow-xl shadow-purple-900/30"
               >
                 Get in Touch
               </button>
               <button 
-                onClick={() => document.getElementById('achievements').scrollIntoView({ behavior: 'smooth' })} 
-                className="px-6 md:px-8 py-3 md:py-4 border-2 border-white/30 text-white rounded-full font-bold text-base md:text-lg hover:bg-white/10 hover:border-white/50 transition-all duration-300 backdrop-blur-sm"
+                onClick={() => scrollTo('achievements')} 
+                className="px-5 sm:px-8 py-2.5 sm:py-4 border-2 border-white/30 text-white rounded-full font-bold text-sm sm:text-lg hover:bg-white/10 hover:border-white/50 transition-all duration-300 backdrop-blur-sm"
               >
                 View Projects
               </button>
             </div>
+            
+            {/* Social Icons */}
+            <div className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4">
+              <span className="text-purple-200 text-xs sm:text-sm font-medium">Connect with me:</span>
+              <div className="flex gap-2 sm:gap-3">
+                {socialLinks.map((link, idx) => (
+                  <a 
+                    key={idx}
+                    href={link.href} 
+                    target={link.external !== false ? "_blank" : undefined}
+                    rel={link.external !== false ? "noopener noreferrer" : undefined}
+                    className={`w-9 h-9 sm:w-10 sm:h-10 bg-white/10 backdrop-blur-sm rounded-full flex items-center justify-center text-white ${link.hoverBg} transition-all duration-300 hover:scale-110 border border-white/20`}
+                  >
+                    <i className={`${link.icon} text-base sm:text-lg`} />
+                  </a>
+                ))}
+              </div>
+            </div>
+            
+            {/* CV Download */}
+            <a 
+              href="/assets/Resume.pdf" 
+              download="Saketh_Pabbu_Resume.pdf"
+              className="inline-flex items-center gap-2 text-purple-200 hover:text-white text-xs sm:text-sm font-medium px-3 sm:px-4 py-2 border border-white/60 rounded-full hover:border-white/90 hover:bg-white/10 backdrop-blur-sm transition-all duration-300"
+            >
+              <i className="fas fa-download" /> Download my CV
+            </a>
           </div>
           
           {/* Middle - Code Block & Icons */}

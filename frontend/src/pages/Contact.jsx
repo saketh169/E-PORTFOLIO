@@ -10,12 +10,7 @@ function Contact() {
     setIsSubmitting(true);
 
     try {
-      await axios.post('/api/contact', {
-        name: formData.name,
-        email: formData.email,
-        subject: formData.subject,
-        message: formData.message,
-      });
+      await axios.post('/api/contact', formData);
 
       alert('Thank you for your message! I will get back to you soon.');
       setFormData({ name: '', email: '', subject: '', message: '' });
