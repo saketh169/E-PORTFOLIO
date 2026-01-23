@@ -3,8 +3,8 @@
 A modern, responsive portfolio website showcasing my skills, experience, and projects as a Full Stack Developer.
 
 ## 🚀 Live Demo
-- View Portfolio : https://sakethpabbu-e-portfolio.vercel.app/
-- backend server : https://e-portfolio-backend-ebon.vercel.app/
+- View Portfolio : https://e-portfolio-sakethpabbu-zeta.vercel.app/
+- backend server : https://e-portfolio-backend-zeta.vercel.app/
 
 ## 📋 Overview
 
