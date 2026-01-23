@@ -1,0 +1,3 @@
+# Add your favicon.ico here
+# You can create a favicon using online tools or from your logo
+# Place the favicon.ico file in this public folder

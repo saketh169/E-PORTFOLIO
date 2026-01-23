@@ -9,6 +9,7 @@ const PORT = process.env.PORT || 5200;
 // Middleware
 app.use(cors());
 app.use(express.json());
+app.use(express.static('public'));
 
 // Create transporter
 const transporter = nodemailer.createTransport({
