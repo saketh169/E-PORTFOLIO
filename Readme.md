@@ -231,7 +231,7 @@ This project is open source and available under the [MIT License](LICENSE).
 ## 📞 Contact
 
 **Saketh Pabbu**
-- Email: sakth.p23@iiits.in
+- Email: sakethpabbu.works@gmail.com
 - LinkedIn: [Your LinkedIn Profile]
 - GitHub: [Your GitHub Profile]
 

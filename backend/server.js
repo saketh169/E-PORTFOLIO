@@ -167,7 +167,7 @@ const createReplyEmailTemplate = (name) => `
             <div class="signature">
                 <strong>Saketh Pabbu</strong><br>
                 Full Stack Developer<br>
-                Portfolio: sakth.p23@iiits.in
+                Portfolio: sakethpabbu.works@gmail.com
             </div>
         </div>
         <div class="footer">
@@ -193,9 +193,9 @@ app.post('/api/contact', async (req, res) => {
   try {
     // Email to portfolio owner
     const ownerMailOptions = {
-            from: `${name} <${email}>`,
+        from: `${name} <${email}>`,
       to: process.env.EMAIL_USER,
-            replyTo: email,
+        replyTo: email,
       subject: `Portfolio Contact: ${subject}`,
       html: createOwnerEmailTemplate(name, email, subject, message)
     };
