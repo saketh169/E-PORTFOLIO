@@ -167,7 +167,7 @@ const createReplyEmailTemplate = (name) => `
             <div class="signature">
                 <strong>Saketh Pabbu</strong><br>
                 Full Stack Developer<br>
-                Portfolio: sakethpabbu.works@gmail.com
+                Portfolio: sakth.p23@iiits.in
             </div>
         </div>
         <div class="footer">

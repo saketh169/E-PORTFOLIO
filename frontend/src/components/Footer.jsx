@@ -91,7 +91,7 @@ function Footer() {
             </h4>
             <div className="space-y-4">
               {[
-                { icon: 'fas fa-envelope', text: 'sakethpabbu.works@gmail.com' },
+                { icon: 'fas fa-envelope', text: 'sakth.p23@iiits.in' },
                 { icon: 'fas fa-phone', text: '+91 7075783143' },
                 { icon: 'fas fa-map-marker-alt', text: 'Nellore, Andhra Pradesh' }
               ].map((item, idx) => (
