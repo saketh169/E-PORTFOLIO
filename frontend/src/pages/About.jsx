@@ -4,18 +4,18 @@ function About() {
   // Personal info data
   const personalInfo = [
     { icon: "fas fa-user", label: "Name", value: "Saketh Pabbu" },
-    { icon: "fas fa-birthday-cake", label: "Age", value: "19 Years" },
+    { icon: "fas fa-birthday-cake", label: "Age", value: "20 Years" },
     { icon: "fas fa-map-marker-alt", label: "Location", value: "Nellore, Andhra Pradesh, India" },
-    { icon: "fas fa-envelope", label: "Email", value: "sakethpabbu.works@gmail.com" },
+    { icon: "fas fa-envelope", label: "Email", value: "saketh.p23@iiits.in" },
     { icon: "fas fa-phone", label: "Phone", value: "+91 7075783143" },
-    { icon: "fas fa-graduation-cap", label: "Education", value: "B.Tech CSE (UG-3) @ IIIT SriCity" }
+    { icon: "fas fa-graduation-cap", label: "Education", value: "B.Tech CSE (Final Year) @ IIIT SriCity" }
   ];
 
   const statements = [
-    { icon: "fas fa-bullseye", text: "I'm a third-year Computer Science student passionate about building innovative tech solutions and actively exploring AI, machine learning, and data science." },
-    { icon: "fas fa-laptop", text: "As a passionate Computer Science student, I am driven by a love for creating impactful technology through web development, data science, and machine learning. My proficiency in Java, C, and Python has been sharpened by solving over 300 algorithmic challenges on LeetCode. I excel at building user-friendly web applications using the MERN stack." },
-    { icon: "fas fa-handshake", text: "I thrive on collaboration and continuous learning, leveraging my leadership, analytical, and communication skills to drive projects forward. My academic projects demonstrate my ability to blend technical expertise with real-world applications." },
-    { icon: "fas fa-star", text: "With a strong foundation in CS fundamentals and a commitment to innovation, I aim to contribute to cutting-edge projects in data science and machine learning, creating technology that makes a meaningful difference in the world." }
+    { icon: "fas fa-bullseye", text: "I'm a final-year Computer Science student learning and building with the MERN stack. I work on both frontend (React, CSS) and backend (Node.js, Express) development. I also practice competitive programming and solve coding challenges regularly." },
+    { icon: "fas fa-laptop", text: "I build full-stack web applications from start to finish. Frontend work includes creating responsive designs with React and Tailwind CSS. Backend work involves building APIs with Node.js and Express, working with MongoDB databases. I'm proficient in Java, C, and Python. My competitive programming experience (500+ LeetCode problems) helps me write better code and solve problems efficiently." },
+    { icon: "fas fa-handshake", text: "I enjoy working with teams and learning new things. I can handle all parts of a web project—design, frontend, backend, and deployment. I like collaborating with others and getting feedback to improve my work." },
+    { icon: "fas fa-star", text: "I'm focused on becoming a good MERN stack developer. I like building practical web applications that work well. Whether it's making nice user interfaces or building APIs, I try to do my best and keep learning new things." }
   ];
 
   return (
@@ -43,7 +43,7 @@ function About() {
                 </div>
                 
                 <p className="text-gray-600 leading-relaxed text-sm sm:text-lg w-full sm:w-4/5 mx-auto">
-                  Welcome to my portfolio! I'm a passionate Computer Science student driven to innovate through full-stack development, AI, and data science, with a goal to create impactful, scalable technology solutions. I am currently pursuing a Bachelor of Technology (B.Tech) in Computer Science and Engineering in my third year, actively honing my skills through academic projects, internships, and competitive programming.
+                  I'm a final-year Computer Science student at IIIT Sri City building <strong>full-stack web applications</strong> with the MERN stack. I enjoy creating responsive user interfaces with React and designing clean backend APIs using Node.js and Express with MongoDB. Strong in Java, C, and Python with competitive programming experience (500+ LeetCode problems, rating 1436). I build complete web applications from frontend to backend, handle databases, and deploy on cloud platforms like Vercel and Render. I also explore machine learning, deep learning, and other technologies through projects.
                 </p>
                 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6 pt-4 sm:pt-6">

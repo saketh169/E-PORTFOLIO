@@ -16,7 +16,7 @@ function Contact() {
       setFormData({ name: '', email: '', subject: '', message: '' });
     } catch (error) {
       console.error('Error:', error);
-      alert('Sorry, there was an error sending your message. Please try again or contact me directly at sakethpabbu.works@gmail.com');
+      alert('Sorry, there was an error sending your message. Please try again or contact me directly at saketh.p23@iiits.in');
     } finally {
       setIsSubmitting(false);
     }
@@ -34,7 +34,7 @@ function Contact() {
             <span className="text-purple-600 font-semibold text-lg tracking-wider uppercase">Get In Touch</span>
             <h2 className="text-5xl font-bold mt-2 bg-linear-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">Contact Me</h2>
             <div className="w-24 h-1 bg-linear-to-r from-purple-600 to-pink-600 mx-auto mt-4 rounded-full"></div>
-            <p className="text-gray-600 mt-4 max-w-2xl mx-auto">Feel free to reach out for collaborations, opportunities, or just a friendly hello! You can contact me directly at <strong>sakethpabbu.works@gmail.com</strong> or use the form below to send your details.</p>
+            <p className="text-gray-600 mt-4 max-w-2xl mx-auto">Feel free to reach out for collaborations, opportunities, or just a friendly hello! You can contact me directly at <strong>saketh.p23@iiits.in</strong> or use the form below to send your details.</p>
           </div>
           
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
@@ -47,7 +47,7 @@ function Contact() {
                 
                 <div className="space-y-6">
                   {[
-                    { icon: "fas fa-envelope", label: "Email", value: "sakethpabbu.works@gmail.com", link: "mailto:sakethpabbu.works@gmail.com" },
+                    { icon: "fas fa-envelope", label: "Email", value: "saketh.p23@iiits.in", link: "mailto:saketh.p23@iiits.in" },
                     { icon: "fas fa-phone", label: "Phone", value: "+91-7075783143", link: "tel:+917075783143" },
                     { icon: "fas fa-map-marker-alt", label: "Location", value: "Nellore, Andhra Pradesh, India", link: null }
                   ].map((item, idx) => (

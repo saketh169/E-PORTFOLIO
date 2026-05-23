@@ -12,7 +12,7 @@ const scrollTo = (id) => document.getElementById(id)?.scrollIntoView({ behavior:
 
 function Intro() {
   return (
-    <section id="intro" className="min-h-screen bg-linear-to-br from-purple-900 via-purple-700 to-indigo-800 text-white flex items-center pt-24 sm:pt-32 pb-16 sm:pb-20 relative overflow-hidden border-b-4 border-purple-500/30">
+    <section id="intro" className="min-h-screen bg-linear-to-br from-purple-900 via-purple-700 to-indigo-800 text-white flex items-center pt-40 sm:pt-36 pb-16 sm:pb-20 relative overflow-hidden border-b-4 border-purple-500/30">
       {/* Animated background */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <div className="absolute top-20 left-10 w-48 sm:w-64 h-48 sm:h-64 bg-purple-500/15 rounded-full blur-3xl animate-float" />

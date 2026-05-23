@@ -14,8 +14,8 @@ function Education() {
     {
       icon: "fas fa-book",
       degree: "Intermediate / 12th Grade",
-      institution: "Narayana Junior College, India",
-      grade: "Grade: 9.84",
+      institution: "Narayana Junior College, Nellore, Andhra Pradesh",
+      grade: "Percentage: 98.7%",
       period: "Jun 2021 - Jun 2023",
       description: "Excelled in Mathematics, Physics, and Chemistry, actively solving complex problems to build a strong foundation for computer science. Dedicated significant time preparing for competitive exams like JEE and EAMCET.",
       highlights: ["Mathematics", "Physics", "Chemistry", "JEE Preparation"]
@@ -23,9 +23,9 @@ function Education() {
     {
       icon: "fas fa-school",
       degree: "10th Grade",
-      institution: "Sri Netaji M.S.R Pilot High School",
-      grade: "Grade: 10",
-      period: "Jun 2010 - Jun 2020",
+      institution: "Sri Netaji M.S.R Pilot High School, Nellore, Andhra Pradesh",
+      grade: "Percentage: 100%",
+      period: "Jun 2010 - Jun 2021",
       description: "Studied at a reputed school and developed a strong foundation with great knowledge in Mathematics, Physics, Biology, and Social Studies. Participated in school-level coding and science projects.",
       highlights: ["Mathematics", "Physics", "Biology", "Science Projects"]
     }

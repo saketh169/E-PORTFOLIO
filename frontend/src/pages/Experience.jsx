@@ -3,40 +3,22 @@
 function Experience() {
   const experiences = [
     {
-      title: "Full Stack Web Development and AI-Integrated Marketing Strategies Intern",
+      title: "Decoration Team - Abhisarga",
+      company: "IIIT Sri City",
+      period: "Feb 2025 - Feb 2026",
+      icon: "fas fa-palette",
+      color: "from-pink-500 to-purple-600",
+      description: "Part of the decoration team for Abhisarga, the annual techno-cultural fest conducted every year for 3 days. Responsible for creative decoration designs, venue setup, and ensuring a vibrant atmosphere for the event throughout the festival duration.",
+      skills: ["Event Decoration", "Creative Design", "Leadership", "Coordination"]
+    },
+    {
+      title: "Full-Stack Web Development & AI-Integrated Marketing Intern",
       company: "Myna Seva Foundation",
       period: "Jul 2025 - Aug 2025",
       icon: "fas fa-briefcase",
       color: "from-purple-500 to-indigo-600",
-      description: "Developed dynamic web applications using Full-Stack Development technologies, including HTML, CSS, JavaScript, and MERN Stack. Integrated AI-driven marketing strategies to enhance user engagement.",
-      skills: ["Full-Stack Development", "HTML", "CSS", "JavaScript", "MERN Stack", "AI Marketing"]
-    },
-    {
-      title: "Decoration Team Member",
-      company: "Abhisarga",
-      period: "Mar 2025 - Apr 2025",
-      icon: "fas fa-palette",
-      color: "from-pink-500 to-rose-600",
-      description: "Contributed to event planning and execution, focusing on creative design and logistics. Applied Team Leadership and Communication Skills to coordinate with team members.",
-      skills: ["Team Leadership", "Communication", "Event Planning", "Creative Design"]
-    },
-    {
-      title: "Campus Ambassador Program",
-      company: "Techfest, IIT Bombay",
-      period: "Jul 2024 - Dec 2024",
-      icon: "fas fa-rocket",
-      color: "from-blue-500 to-cyan-600",
-      description: "Promoted Techfest across colleges, earning 7500 points and ranking in the top 1000 ambassadors. Utilized Communication Skills and Event Management.",
-      skills: ["Communication", "Event Management", "Marketing", "Leadership"]
-    },
-    {
-      title: "Python Internship",
-      company: "CodSoft",
-      period: "Jul 2024 - Aug 2024",
-      icon: "fab fa-python",
-      color: "from-green-500 to-emerald-600",
-      description: "Built and optimized Python-based projects, applying Python programming skills to develop efficient solutions. Collaborated on real-world applications.",
-      skills: ["Python", "Problem Solving", "Data Structures", "APIs"]
+      description: "Designed and customized websites using WordPress, Wix, and Google Sites while applying basic UI/UX design principles. Created promotional visuals using Canva to support community initiatives and improve online engagement.",
+      skills: ["WordPress", "Wix", "Google Sites", "UI/UX Design", "Canva", "Digital Marketing"]
     }
   ];
 

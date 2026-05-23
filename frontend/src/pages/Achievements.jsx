@@ -6,58 +6,75 @@ function Achievements() {
       icon: "fas fa-trophy",
       title: "Agentica AI Hackathon 2025",
       subtitle: "1st Runner-Up, 2025",
-      description: "Won a cash prize of ₹20,000 for creating an AI-Powered Intelligent Document Management System.",
+      description: "Won a cash prize of ₹20,000 for developing an AI-Powered Intelligent Document Management System.",
       color: "from-yellow-400 to-orange-500",
       highlight: true
     },
     {
-      icon: "fas fa-bullseye",
-      title: "Technova Coding Competition",
-      subtitle: "Qualified Coding Round, 2024",
-      description: "Successfully qualified for the coding round, demonstrating strong problem-solving and algorithmic skills.",
-      color: "from-purple-500 to-indigo-600"
+      icon: "fas fa-laptop",
+      title: "LeetCode: 500+ Problems Solved",
+      subtitle: "2024–2025",
+      description: "Solved over 500 algorithmic problems with a 1436 contest rating. Earned 50 & 100-day active badges in 2024–2025. Strong problem-solving and consistent competitive programming practice.",
+      color: "from-green-500 to-emerald-600"
     },
     {
-      icon: "fas fa-laptop",
-      title: "LeetCode Streak Badges",
-      subtitle: "2023–Present",
-      description: "Solved over 300 algorithmic problems, earning 50-day and 100-day active streak badges.",
-      color: "from-green-500 to-emerald-600"
+      icon: "fas fa-medal",
+      title: "Campus Ambassador, Techfest IIT Bombay",
+      subtitle: "172nd Rank out of 1000+",
+      description: "Secured 172nd rank among top ambassadors with 7500 points for festival promotion and event management.",
+      color: "from-indigo-500 to-purple-600"
+    },
+    {
+      icon: "fas fa-code",
+      title: "CodeX - DSA Coding Competition",
+      subtitle: "11th Place, Utkrishta Fest",
+      description: "Achieved 11th place in CodeX DSA Coding Competition among skilled programmers during Utkrishta Technical Fest by Gradient Club.",
+      color: "from-pink-500 to-rose-600"
     },
     {
       icon: "fab fa-cloud",
       title: "Google Cloud Skill Boost",
-      subtitle: "2023",
-      description: "Completed many skills badges and arcade games, achieving the Arcade Trooper milestone 2 times in events.",
+      subtitle: "Arcade Trooper Tier, 2024",
+      description: "Completed advanced labs and Arcade games over 6 months, earning Arcade Trooper Tier rewards. Demonstrated proficiency in cloud computing and GCP services.",
       color: "from-blue-500 to-cyan-600"
+    }
+  ];
+
+  const certifications = [
+    {
+      icon: "fas fa-certificate",
+      title: "Web3 and Blockchain Summer School",
+      subtitle: "Web3SSH, IIIT Sri City, 05/2025",
+      description: "Completed Web3SSH program, gaining expertise in blockchain technology and decentralized systems.",
+      color: "from-cyan-500 to-blue-600"
     },
     {
-      icon: "fas fa-medal",
-      title: "CodeX by Gradient Club",
-      subtitle: "2023",
-      description: "Achieved 11th place in a competitive DSA Coding Competition among skilled programmers.",
-      color: "from-pink-500 to-rose-600"
+      icon: "fas fa-brain",
+      title: "Career Essentials in Generative AI",
+      subtitle: "Microsoft & LinkedIn Learning, 06/2025",
+      description: "Successfully completed certification in Generative AI and modern AI applications.",
+      color: "from-orange-500 to-red-500"
     },
     {
-      icon: "fas fa-bullseye",
-      title: "Campus Ambassador, Techfest IIT Bombay",
-      subtitle: "2022",
-      description: "Secured 172nd rank among top 1000 ambassadors, earning 7500 points for festival promotion.",
-      color: "from-indigo-500 to-purple-600"
+      icon: "fas fa-python",
+      title: "Python Fundamentals for Beginners",
+      subtitle: "Great Learning",
+      description: "Completed comprehensive Python fundamentals certification covering core programming concepts and best practices.",
+      color: "from-blue-600 to-indigo-600"
     }
   ];
 
   const extracurriculars = [
     {
       title: "Decoration Team Member",
-      organization: "Abhisarga Fest | 2024",
-      description: "Contributed creatively to enhance the visual appeal and ambiance of the college fest through innovative designs.",
+      organization: "Abhisarga Fest | 02/2025 - 02/2026",
+      description: "Designed and implemented creative designs to enhance the visual appeal and festive atmosphere of the college event.",
       icon: "fas fa-palette"
     },
     {
       title: "Independence Day Meraki Team",
-      organization: "College Event | 2023",
-      description: "Worked on the decoration team for college Independence Day celebrations, creating a festive and patriotic ambiance.",
+      organization: "College Event | 08/2024",
+      description: "Collaborated to craft thematic arrangements for college Independence Day celebrations, establishing a patriotic setting.",
       icon: "fas fa-flag"
     }
   ];
@@ -108,14 +125,47 @@ function Achievements() {
 
       <Projects />
 
-      {/* Extracurricular Section */}
+      {/* Certifications Section */}
+      <section id="certifications" className="py-16 bg-linear-to-b from-purple-100 to-white relative overflow-hidden border-b-4 border-purple-200/50">
+        <div className="absolute top-20 right-10 w-72 h-72 bg-blue-200/30 rounded-full blur-3xl"></div>
+        
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          <div className="text-center mb-16">
+            <span className="text-purple-600 font-semibold text-lg tracking-wider uppercase">Professional Development</span>
+            <h2 className="text-5xl font-bold mt-2 bg-linear-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">Certifications</h2>
+            <div className="w-24 h-1 bg-linear-to-r from-blue-600 to-purple-600 mx-auto mt-4 rounded-full"></div>
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {certifications.map((cert, index) => (
+              <div 
+                key={index}
+                className={`group relative bg-white rounded-3xl shadow-xl p-6 border-2 border-blue-100 hover:border-transparent transition-all duration-500 transform hover:-translate-y-3 hover:shadow-2xl overflow-hidden`}
+              >
+                <div className={`absolute inset-0 bg-linear-to-br ${cert.color} opacity-0 group-hover:opacity-5 transition-opacity duration-500`}></div>
+                
+                <div className="relative z-10">
+                  <div className="flex items-start justify-between mb-4">
+                    <i className={`${cert.icon} text-4xl`} style={{background: `linear-gradient(to right, var(--tw-gradient-stops))`, backgroundClip: 'text', color: 'transparent'}}></i>
+                  </div>
+                  <h3 className="text-xl font-bold text-gray-800 mb-2">{cert.title}</h3>
+                  <p className={`text-transparent bg-linear-to-r ${cert.color} bg-clip-text font-semibold mb-3`}>{cert.subtitle}</p>
+                  <p className="text-gray-600 leading-relaxed">{cert.description}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Co-Curricular Section */}
       <section id="extracurricular" className="py-16 bg-linear-to-b from-purple-50 to-white relative overflow-hidden">
         <div className="absolute top-0 right-0 w-72 h-72 bg-pink-200/30 rounded-full blur-3xl"></div>
         
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center mb-16">
             <span className="text-purple-600 font-semibold text-lg tracking-wider uppercase">Beyond Academics</span>
-            <h2 className="text-5xl font-bold mt-2 bg-linear-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">Extracurricular & Volunteering</h2>
+            <h2 className="text-5xl font-bold mt-2 bg-linear-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">Co-Curricular Activities</h2>
             <div className="w-24 h-1 bg-linear-to-r from-purple-600 to-pink-600 mx-auto mt-4 rounded-full"></div>
           </div>
           
