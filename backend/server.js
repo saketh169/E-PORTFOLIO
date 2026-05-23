@@ -193,9 +193,9 @@ app.post('/api/contact', async (req, res) => {
   try {
     // Email to portfolio owner
     const ownerMailOptions = {
-        from: `${name} <${email}>`,
+            from: `${name} <${email}>`,
       to: process.env.EMAIL_USER,
-        replyTo: email,
+            replyTo: email,
       subject: `Portfolio Contact: ${subject}`,
       html: createOwnerEmailTemplate(name, email, subject, message)
     };
