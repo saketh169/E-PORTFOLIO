@@ -193,8 +193,9 @@ app.post('/api/contact', async (req, res) => {
   try {
     // Email to portfolio owner
     const ownerMailOptions = {
-      from: process.env.EMAIL_USER,
+        from: `${name} <${email}>`,
       to: process.env.EMAIL_USER,
+        replyTo: email,
       subject: `Portfolio Contact: ${subject}`,
       html: createOwnerEmailTemplate(name, email, subject, message)
     };
@@ -203,6 +204,7 @@ app.post('/api/contact', async (req, res) => {
     const replyMailOptions = {
       from: process.env.EMAIL_USER,
       to: email,
+            replyTo: process.env.EMAIL_USER,
       subject: 'Thank you for contacting me',
       html: createReplyEmailTemplate(name)
     };
