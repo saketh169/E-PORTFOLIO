@@ -42,10 +42,9 @@ function About() {
                   <h3 className="text-xl sm:text-3xl font-bold text-gray-800">About Me</h3>
                 </div>
                 
-                <p className="text-gray-600 leading-relaxed text-sm sm:text-lg w-full sm:w-4/5 mx-auto">
-                  I'm a final-year Computer Science student at IIIT Sri City building <strong>full-stack web applications</strong> with the MERN stack. I enjoy creating responsive user interfaces with React and designing clean backend APIs using Node.js and Express with MongoDB. Strong in Java, C, and Python with competitive programming experience (500+ LeetCode problems, rating 1436). I build complete web applications from frontend to backend, handle databases, and deploy on cloud platforms like Vercel and Render. I also explore machine learning, deep learning, and other technologies through projects.
-                </p>
-                
+              <p className="text-gray-600 leading-relaxed text-sm sm:text-lg w-full sm:w-4/5 mx-auto">
+                I'm a final-year Computer Science student at IIIT Sri City building <strong>full-stack web applications</strong> with the MERN stack. I enjoy creating responsive user interfaces with React and designing clean backend APIs using <strong>Node.js and Express with MongoDB</strong>. Strong in Java, C, and Python with <strong>competitive programming experience</strong> (500+ LeetCode problems, rating 1436). I build complete web applications from frontend to backend, handle databases, and deploy on cloud platforms like Vercel and Render. I also explore <strong>machine learning and deep learning</strong>, and other technologies through projects.
+              </p>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6 pt-4 sm:pt-6">
                   {personalInfo.map((item, idx) => (
                     <div key={idx} className="flex items-center p-3 sm:p-4 bg-purple-50 rounded-xl hover:bg-purple-100 transition-colors">
