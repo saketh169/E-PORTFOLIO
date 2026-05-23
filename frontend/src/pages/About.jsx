@@ -6,7 +6,7 @@ function About() {
     { icon: "fas fa-user", label: "Name", value: "Saketh Pabbu" },
     { icon: "fas fa-birthday-cake", label: "Age", value: "20 Years" },
     { icon: "fas fa-map-marker-alt", label: "Location", value: "Nellore, Andhra Pradesh, India" },
-    { icon: "fas fa-envelope", label: "Email", value: "saketh.p23@iiits.in" },
+    { icon: "fas fa-envelope", label: "Email", value: "sakethpabbu.works@gmail.com" },
     { icon: "fas fa-phone", label: "Phone", value: "+91 7075783143" },
     { icon: "fas fa-graduation-cap", label: "Education", value: "B.Tech CSE (Final Year) @ IIIT SriCity" }
   ];

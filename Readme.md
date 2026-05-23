@@ -140,7 +140,7 @@ portfolio/
 4. **Configure environment variables**
    ```bash
    # In React/backend/.env
-   EMAIL_USER=your-gmail@gmail.com
+   EMAIL_USER=sakethpabbu.works@gmail.com
    EMAIL_PASS=your-app-password
    PORT=5000
    ```

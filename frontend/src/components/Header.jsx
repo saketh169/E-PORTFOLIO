@@ -111,8 +111,8 @@ function Header() {
         </div>
         
         {/* Mobile Menu */}
-        <div className={`md:hidden overflow-hidden transition-all duration-300 ${
-          isMenuOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
+        <div className={`md:hidden overflow-auto transition-all duration-300 ${
+          isMenuOpen ? 'max-h-64 opacity-100' : 'max-h-0 opacity-0'
         }`}>
           <div className="bg-white/95 backdrop-blur-lg rounded-2xl shadow-xl my-2 p-4">
             <ul className="space-y-1">
