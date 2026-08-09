@@ -130,6 +130,7 @@ function Intro() {
               <div className="absolute -inset-1 bg-linear-to-r from-purple-400 via-pink-500 to-yellow-400 rounded-full blur-lg opacity-70 group-hover:opacity-100 transition-opacity duration-500 animate-pulse-glow"></div>
               <img 
                 className="relative w-48 h-48 md:w-56 md:h-56 lg:w-64 lg:h-64 xl:w-72 xl:h-72 rounded-full object-cover shadow-2xl border-4 border-white/20 group-hover:border-white/40 transition-all duration-500 group-hover:scale-105" 
+                style={{ objectPosition: 'center 12%' }}
                 src="/images/image.png" 
                 alt="Saketh Pabbu" 
               />
