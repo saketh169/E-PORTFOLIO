@@ -23,7 +23,7 @@ function Intro() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
         <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-6 sm:gap-8 lg:gap-12 items-center">
           {/* Left - Introduction */}
-          <div className="space-y-4 sm:space-y-6 animate-fade-in-left mt-8 sm:mt-16 xl:col-span-1 px-2 sm:px-0 sm:-ml-4 lg:-ml-8">
+          <div className="flex flex-col items-center text-center lg:items-start lg:text-left space-y-4 sm:space-y-6 animate-fade-in-left mt-8 sm:mt-16 xl:col-span-1 px-2 sm:px-0">
             <div className="space-y-2">
               <p className="text-purple-200 text-sm sm:text-lg font-medium tracking-wider uppercase">Welcome to my portfolio</p>
               <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold leading-tight">
@@ -38,7 +38,7 @@ function Intro() {
             </p>
             
             {/* CTA Buttons */}
-            <div className="flex flex-wrap gap-3 sm:gap-4 pt-2 sm:pt-4">
+            <div className="flex flex-wrap justify-center lg:justify-start gap-3 sm:gap-4 pt-2 sm:pt-4">
               <button 
                 onClick={() => scrollTo('contact')} 
                 className="btn-shine px-5 sm:px-8 py-2.5 sm:py-4 bg-white text-purple-700 rounded-full font-bold text-sm sm:text-lg hover:bg-purple-50 hover:scale-105 transition-all duration-300 shadow-xl shadow-purple-900/30"
@@ -54,9 +54,9 @@ function Intro() {
             </div>
             
             {/* Social Icons */}
-            <div className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4">
+            <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-2 sm:gap-4">
               <span className="text-purple-200 text-xs sm:text-sm font-medium">Connect with me:</span>
-              <div className="flex gap-2 sm:gap-3">
+              <div className="flex justify-center gap-2 sm:gap-3">
                 {socialLinks.map((link, idx) => (
                   <a 
                     key={idx}
@@ -75,7 +75,7 @@ function Intro() {
             <a 
               href="/assets/Resume.pdf" 
               download="Saketh_Pabbu_Resume.pdf"
-              className="inline-flex items-center gap-2 text-purple-200 hover:text-white text-xs sm:text-sm font-medium px-3 sm:px-4 py-2 border border-white/60 rounded-full hover:border-white/90 hover:bg-white/10 backdrop-blur-sm transition-all duration-300"
+              className="inline-flex items-center gap-2 text-purple-200 hover:text-white text-xs sm:text-sm font-medium px-3 sm:px-4 py-2 border border-white/60 rounded-full hover:border-white/90 hover:bg-white/10 backdrop-blur-sm transition-all duration-300 mx-auto lg:mx-0"
             >
               <i className="fas fa-download" /> Download my CV
             </a>
