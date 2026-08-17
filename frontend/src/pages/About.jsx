@@ -4,18 +4,18 @@ function About() {
   // Personal info data
   const personalInfo = [
     { icon: "fas fa-user", label: "Name", value: "Saketh Pabbu" },
-    { icon: "fas fa-birthday-cake", label: "Age", value: "20 Years" },
-    { icon: "fas fa-map-marker-alt", label: "Location", value: "Nellore, Andhra Pradesh, India" },
-    { icon: "fas fa-envelope", label: "Email", value: "sakethpabbu.works@gmail.com" },
+    { icon: "fas fa-envelope", label: "College Email", value: "saketh.p23@iiits.in" },
+    { icon: "fas fa-envelope", label: "Personal Email", value: "sakethpabbu.works@gmail.com" },
     { icon: "fas fa-phone", label: "Phone", value: "+91 7075783143" },
-    { icon: "fas fa-graduation-cap", label: "Education", value: "B.Tech CSE (Final Year) @ IIIT SriCity" }
+    { icon: "fas fa-graduation-cap", label: "Education", value: "B.Tech CSE (2023-2027) @ IIIT Sri City (CGPA: 9.38)" },
+    { icon: "fas fa-map-marker-alt", label: "Location", value: "Nellore, Andhra Pradesh, India" }
   ];
 
   const statements = [
-    { icon: "fas fa-bullseye", text: "I'm a final-year Computer Science student learning and building with the MERN stack. I work on both frontend (React, CSS) and backend (Node.js, Express) development. I also practice competitive programming and solve coding challenges regularly." },
-    { icon: "fas fa-laptop", text: "I build full-stack web applications from start to finish. Frontend work includes creating responsive designs with React and Tailwind CSS. Backend work involves building APIs with Node.js and Express, working with MongoDB databases. I'm proficient in Java, C, and Python. My competitive programming experience (500+ LeetCode problems) helps me write better code and solve problems efficiently." },
-    { icon: "fas fa-handshake", text: "I enjoy working with teams and learning new things. I can handle all parts of a web project—design, frontend, backend, and deployment. I like collaborating with others and getting feedback to improve my work." },
-    { icon: "fas fa-star", text: "I'm focused on becoming a good MERN stack developer. I like building practical web applications that work well. Whether it's making nice user interfaces or building APIs, I try to do my best and keep learning new things." }
+    { icon: "fas fa-bullseye", text: "CS student at IIIT Sri City interested in MERN stack development and diving deep into machine learning and deep learning." },
+    { icon: "fas fa-code", text: "Proficient in Java, C, and Python with 500+ problems solved on LeetCode (Rating: 1436)." },
+    { icon: "fas fa-laptop", text: "Experienced in building full-stack web applications, designing scalable backend architectures, and developing user-friendly interfaces." },
+    { icon: "fas fa-star", text: "Dedicated to solving real-world problems and delivering efficient software solutions." }
   ];
 
   return (
@@ -43,7 +43,7 @@ function About() {
                 </div>
                 
               <p className="text-gray-600 leading-relaxed text-sm sm:text-lg w-full sm:w-4/5 mx-auto">
-                I'm a final-year Computer Science student at IIIT Sri City building <strong>full-stack web applications</strong> with the MERN stack. I enjoy creating responsive user interfaces with React and designing clean backend APIs using <strong>Node.js and Express with MongoDB</strong>. Strong in Java, C, and Python with <strong>competitive programming experience</strong> (500+ LeetCode problems, rating 1436). I build complete web applications from frontend to backend, handle databases, and deploy on cloud platforms like Vercel and Render. I also explore <strong>machine learning and deep learning</strong>, and other technologies through projects.
+                CS student at IIIT Sri City interested in <strong>MERN stack development</strong> and diving deep into <strong>machine learning and deep learning</strong>. Proficient in <strong>Java, C, and Python with 500+ problems solved on LeetCode</strong>. Experienced in building full-stack web applications, designing scalable backend architectures, and developing user-friendly interfaces. Dedicated to solving real-world problems and delivering efficient software solutions.
               </p>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6 pt-4 sm:pt-6">
                   {personalInfo.map((item, idx) => (

@@ -33,14 +33,16 @@ function Skills() {
         { name: "HTML", icon: "fab fa-html5", level: 95 },
         { name: "CSS", icon: "fab fa-css3", level: 90 },
         { name: "JavaScript", icon: "fab fa-js", level: 85 },
-        { name: "React", icon: "fab fa-react", level: 82 },
-        { name: "Redux", icon: "fas fa-store", level: 85 },
+        { name: "React", icon: "fab fa-react", level: 85 },
+        { name: "MERN Stack", icon: "fas fa-layer-group", level: 88 },
+        { name: "Node.js", icon: "fab fa-node-js", level: 82 },
+        { name: "Express", icon: "fas fa-server", level: 82 },
+        { name: "Spring Boot", icon: "fas fa-leaf", level: 75 },
+        { name: "GraphQL", icon: "fas fa-project-diagram", level: 75 },
+        { name: "MySQL", icon: "fas fa-database", level: 80 },
+        { name: "MongoDB", icon: "fas fa-leaf", level: 82 },
         { name: "Tailwind CSS", icon: "fas fa-wind", level: 90 },
-        { name: "Node.js", icon: "fab fa-node-js", level: 78 },
-        { name: "Express", icon: "fas fa-server", level: 80 },
-        { name: "REST APIs", icon: "fas fa-network-wired", level: 85 },
-        { name: "MongoDB", icon: "fas fa-leaf", level: 80 },
-        { name: "Mongoose", icon: "fas fa-database", level: 80 },
+        { name: "Bootstrap", icon: "fab fa-bootstrap", level: 85 },
         { name: "EJS", icon: "fas fa-file-code", level: 80 }
       ]
     },
@@ -48,33 +50,29 @@ function Skills() {
       title: "Tools & Platforms",
       icon: "fas fa-tools",
       skills: [
-        { name: "VS Code", icon: "fas fa-code", level: 95 },
-        { name: "Git", icon: "fab fa-git", level: 85 },
-        { name: "GitHub", icon: "fab fa-github", level: 88 },
+        { name: "Linux", icon: "fab fa-linux", level: 80 },
+        { name: "Git", icon: "fab fa-git", level: 88 },
+        { name: "GitHub", icon: "fab fa-github", level: 90 },
         { name: "Docker", icon: "fab fa-docker", level: 80 },
         { name: "Postman", icon: "fas fa-flask", level: 85 },
-        { name: "Swagger", icon: "fas fa-file-code", level: 78 },
-        { name: "Linux", icon: "fab fa-linux", level: 75 },
+        { name: "Swagger", icon: "fas fa-file-code", level: 80 },
+        { name: "CI/CD", icon: "fas fa-infinity", level: 78 },
+        { name: "Matlab", icon: "fas fa-square-root-alt", level: 75 },
         { name: "Vercel", icon: "fas fa-cloud", level: 85 },
         { name: "Render", icon: "fas fa-server", level: 82 },
-        { name: "AWS", icon: "fab fa-aws", level: 75 },
-        { name: "QGIS", icon: "fas fa-map", level: 82 },
-        { name: "Jupyter", icon: "fas fa-book", level: 80 }
+        { name: "AWS", icon: "fab fa-aws", level: 78 }
       ]
     },
     {
       title: "Libraries & Frameworks",
       icon: "fas fa-book",
       skills: [
-        { name: "Bootstrap", icon: "fas fa-crosshairs", level: 85 },
-        { name: "NumPy", icon: "fas fa-calculator", level: 80 },
-        { name: "Pandas", icon: "fas fa-table", level: 78 },
-        { name: "Matplotlib", icon: "fas fa-chart-line", level: 75 },
-        { name: "Seaborn", icon: "fas fa-chart-bar", level: 70 },
-        { name: "OpenCV", icon: "fas fa-image", level: 80 },
-        { name: "PyTorch", icon: "fas fa-cube", level: 78 },
-        { name: "Rasterio", icon: "fas fa-layer-group", level: 78 },
-        { name: "Geopandas", icon: "fas fa-map", level: 80 }
+        { name: "Pandas", icon: "fas fa-table", level: 82 },
+        { name: "Matplotlib", icon: "fas fa-chart-line", level: 80 },
+        { name: "Seaborn", icon: "fas fa-chart-bar", level: 78 },
+        { name: "OpenCV", icon: "fas fa-image", level: 82 },
+        { name: "NumPy", icon: "fas fa-calculator", level: 82 },
+        { name: "PyTorch", icon: "fas fa-cube", level: 78 }
       ]
     }
   ];

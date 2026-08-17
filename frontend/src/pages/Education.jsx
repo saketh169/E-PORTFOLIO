@@ -4,12 +4,12 @@ function Education() {
   const educationData = [
     {
       icon: "fas fa-graduation-cap",
-      degree: "Bachelor of Technology - BTech, Computer Science",
-      institution: "Indian Institute of Information Technology, SriCity",
-      grade: "CGPA: 9.33",
-      period: "Aug 2023 - Jun 2027",
-      description: "Actively learning and growing every day through advanced concepts in Data Structures, Algorithms, Full-Stack Development, and Database Systems. Engaged in competitive programming and tech events to enhance practical skills.",
-      highlights: ["Data Structures", "Algorithms", "Full-Stack Development", "Database Systems"]
+      degree: "Bachelor of Technology in Computer Science and Engineering",
+      institution: "Indian Institute of Information Technology, Sri City Chittoor, Andhra Pradesh",
+      grade: "CGPA: 9.38",
+      period: "08/2023 – 06/2027",
+      description: "Pursuing B.Tech in CSE with advanced coursework in Data Structures & Algorithms, Machine Learning, Deep Learning, Full-Stack Development, and Cloud Computing. Maintaining an academic performance of 9.38 CGPA.",
+      highlights: ["Data Structures", "Algorithms", "MERN Stack", "Machine Learning", "Cloud Computing"]
     },
     {
       icon: "fas fa-book",

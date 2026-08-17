@@ -3,22 +3,40 @@
 function Experience() {
   const experiences = [
     {
-      title: "Decoration Team - Abhisarga",
-      company: "IIIT Sri City",
-      period: "Feb 2025 - Feb 2026",
-      icon: "fas fa-palette",
-      color: "from-pink-500 to-purple-600",
-      description: "Part of the decoration team for Abhisarga, the annual techno-cultural fest conducted every year for 3 days. Responsible for creative decoration designs, venue setup, and ensuring a vibrant atmosphere for the event throughout the festival duration.",
-      skills: ["Event Decoration", "Creative Design", "Leadership", "Coordination"]
+      title: "Full Stack Developer Intern",
+      company: "Code My FYP (Virtual)",
+      period: "07/2026 – 08/2026",
+      icon: "fas fa-code-branch",
+      color: "from-purple-600 to-indigo-600",
+      description: "Developed a School ERP system with role-based access control for super admins, principals, teachers, and students. Collaborated in a team of 3 using GitLab to build scalable components and ensure industry-standard code quality.",
+      skills: ["React", "Role-Based Access Control", "GitLab", "Full-Stack Development", "Team Collaboration"]
     },
     {
-      title: "Full-Stack Web Development & AI-Integrated Marketing Intern",
-      company: "Myna Seva Foundation",
-      period: "Jul 2025 - Aug 2025",
-      icon: "fas fa-briefcase",
-      color: "from-purple-500 to-indigo-600",
+      title: "Full Stack Web Development & AI-Integrated Marketing Intern",
+      company: "Myna Seva Foundation (Virtual)",
+      period: "07/2025 – 08/2025",
+      icon: "fas fa-laptop-code",
+      color: "from-indigo-500 to-purple-500",
       description: "Designed and customized websites using WordPress, Wix, and Google Sites while applying basic UI/UX design principles. Created promotional visuals using Canva to support community initiatives and improve online engagement.",
       skills: ["WordPress", "Wix", "Google Sites", "UI/UX Design", "Canva", "Digital Marketing"]
+    },
+    {
+      title: "Decoration Team Member",
+      company: "Abhisarga Fest | IIIT Sri City",
+      period: "02/2025, 02/2026",
+      icon: "fas fa-palette",
+      color: "from-pink-500 to-purple-600",
+      description: "Designed and set up creative decorations to enhance the visual appeal and festive atmosphere of the annual techno-cultural college fest across 3 days.",
+      skills: ["Event Decoration", "Creative Design", "Team Coordination", "Venue Management"]
+    },
+    {
+      title: "Independence Day Meraki Team Member",
+      company: "College Event | IIIT Sri City",
+      period: "08/2024",
+      icon: "fas fa-flag",
+      color: "from-orange-500 to-amber-600",
+      description: "Collaborated to set up thematic arrangements for college Independence Day celebrations, creating an inspiring and patriotic environment.",
+      skills: ["Thematic Setup", "Teamwork", "Event Logistics", "Creative Execution"]
     }
   ];
 

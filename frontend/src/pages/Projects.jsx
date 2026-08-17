@@ -4,38 +4,43 @@ function Projects() {
       icon: "fas fa-laptop",
       category: "MERN Stack",
       title: "Nutri Connect Web Application",
-      description: "A MERN stack nutrition platform with 30-minute slot booking and 2-week advance scheduling. Built with React frontend using Redux and Tailwind CSS, Node.js backend with MVC structure. Containerized with Docker, documented APIs with Swagger, integrated CI/CD pipeline. Deployed on Render.",
+      period: "01/2025 – 06/2026",
+      description: "Developed a MERN stack web app with 30-minute slot booking and 2-week advance scheduling. Implemented an MVC backend and React frontend with Redux state management and Tailwind CSS. Documented APIs with Swagger and integrated a CI/CD pipeline for deployment.",
       link: "https://github.com/saketh169/FFSD-NUTRI-CONNECT",
-      tags: ["React", "Node.js", "MongoDB", "Redux", "Docker", "Swagger"]
+      tags: ["MERN Stack", "Render", "MVC", "Redux", "Swagger", "CI/CD Pipeline"]
     },
     {
       icon: "fas fa-copy",
       category: "Deep Learning",
       title: "Image Copy Detection for E-Commerce",
-      description: "Built a ConvNeXt Siamese network with 2 parallel CNNs using OpenCV to detect duplicate and edited images. Trained on CIFAR, UCID, Flickr, and Amazon datasets. Achieved over 85% accuracy on queries for e-commerce applications.",
+      period: "12/2025 – 05/2026",
+      description: "Built an image copy detection system using a ConvNeXt-based Siamese/metric-learning network to identify original and edited duplicate product images. Evaluated robustness across multiple attack variations and optimized search using HNSW/ERNG graph indexing for faster retrieval on large image banks.",
       link: "https://github.com/saketh169/Image-Copy-Detection-for-E-Commerce-Platforms.git",
-      tags: ["Siamese Networks", "CNN", "OpenCV", "Deep Learning", "85% Accuracy", "Python"]
+      tags: ["CNN", "Siamese Network", "OpenCV", "ConvNeXt", "HNSW/ERNG Graph Indexing"]
     },
     {
       icon: "fas fa-balance-scale",
       category: "Cloud Computing",
       title: "Hybrid Load Balancing for QoS in Cloud",
-      description: "Created a hybrid load balancing algorithm combining Round Robin and ACO algorithms. Tested scaling from 20 to 50 servers handling 100 to 2,000 tasks. Improved efficiency by 40% while maintaining high QoS and reliability. Built with AWS.",
+      period: "09/2025 – 12/2025",
+      description: "Created a hybrid Round Robin and ACO load balancing algorithm, improving overall system efficiency. Tested scaling from 20 to 50 servers handling 100 to 2,000 tasks with high QoS and reliability.",
       link: "https://github.com/saketh169/Hybrid_load_balancer",
-      tags: ["AWS", "Load Balancing", "ACO Algorithm", "Python", "40% Improvement", "QoS"]
+      tags: ["AWS", "Python", "Round Robin", "ACO Algorithm", "Cloud Scaling", "QoS"]
     },
     {
       icon: "fas fa-watch",
       category: "IoT & ML",
-      title: "IoT-Based Smart Jacket with ML Analytics",
-      description: "Wearable IoT system integrating 6 sensors to monitor vitals using 3 Kaggle datasets. Implemented ML-based real-time anomaly detection achieving 95% accuracy. Integrated mobile and cloud alerts for emergency response and health monitoring.",
+      title: "IoT-Based Smart Jacket with ML for Real-Time Analytics",
+      period: "09/2025 – 12/2025",
+      description: "Integrated 6 sensors into a wearable smart jacket to monitor vitals, utilizing 3 Kaggle datasets. Trained ML-based real-time anomaly detection models, integrating mobile and cloud alerts.",
       link: "https://github.com/saketh169/IOT_Based_Smart_Jacket",
-      tags: ["IoT", "Machine Learning", "Sensors", "Real-Time Analytics", "95% Accuracy", "Python"]
+      tags: ["IoT", "Machine Learning", "Python", "Sensors", "Real-Time Anomaly Detection"]
     },
     {
       icon: "fas fa-network-wired",
       category: "MERN Stack",
       title: "Nexus Platform - Local Service Booking",
+      period: "11/2024 – 12/2024",
       description: "A web platform for booking local services with service provider verification and fraud detection. Built with React, Node.js, and MongoDB. Users can book services, leave reviews, and track bookings in real-time with payment integration.",
       link: "https://github.com/saketh169/Project-Nexus",
       tags: ["React", "Node.js", "MongoDB", "Service Booking", "Real-time", "Payment"]
@@ -44,6 +49,7 @@ function Projects() {
       icon: "fas fa-leaf",
       category: "Deep Learning",
       title: "Food Ripeness Classification using CNN",
+      period: "01/2025 – 03/2025",
       description: "Deep learning model to classify food freshness status using CNN and image analysis. Trained on multiple food categories and achieved strong accuracy in detecting fresh vs spoiled items. Built with PyTorch for practical e-commerce and food safety applications.",
       link: "https://github.com/saketh169/Food-Ripeness-Classification",
       tags: ["PyTorch", "CNN", "Image Classification", "Food Safety", "Deep Learning", "Python"]
@@ -52,6 +58,7 @@ function Projects() {
       icon: "fas fa-map",
       category: "GIS & Remote Sensing",
       title: "IT Park Suitability Analysis - Bangalore",
+      period: "01/2026 – 04/2026",
       description: "Comprehensive GIS analysis to identify optimal locations for IT park development in Bangalore using satellite imagery. Analyzed spectral data and spatial factors to generate suitability heatmaps. Used QGIS and Python for geospatial analysis and visualization.",
       link: "https://github.com/saketh169/Banglore-IT-Park-Suitability",
       tags: ["QGIS", "Satellite Analysis", "Spatial Mapping", "GIS", "Data Analysis", "Python"]
@@ -60,6 +67,7 @@ function Projects() {
       icon: "fas fa-truck",
       category: "Reinforcement Learning",
       title: "Unmanned Vehicle Scheduling (UVS) AI",
+      period: "01/2025 – 04/2025",
       description: "Machine learning project for autonomous vehicle task scheduling and delivery optimization. Implemented reinforcement learning algorithms including DQN and A2C to enable vehicles to make intelligent routing decisions. Optimized for urban logistics and supply-demand balancing.",
       link: "https://github.com/saketh169/UVS_AI",
       tags: ["Reinforcement Learning", "DQN", "A2C", "Vehicle Scheduling", "TensorFlow", "Python"]
@@ -94,7 +102,7 @@ function Projects() {
                 <span className="px-3 py-1 bg-purple-500/30 text-purple-200 text-sm rounded-full">{project.category}</span>
               </div>
               <h3 className="text-xl font-bold text-white mb-2 group-hover:text-purple-300 transition-colors">{project.title}</h3>
-              <p className="text-sm text-purple-400 mb-3 font-semibold">2024</p>
+              <p className="text-sm text-purple-400 mb-3 font-semibold">{project.period}</p>
               <p className="text-purple-200 mb-6 leading-relaxed">{project.description}</p>
               <div className="flex flex-wrap gap-2 mb-6">
                 {project.tags.map((tag, idx) => (
@@ -130,7 +138,7 @@ function Projects() {
                 <span className="px-3 py-1 bg-purple-500/30 text-purple-200 text-sm rounded-full">{project.category}</span>
               </div>
               <h3 className="text-xl font-bold text-white mb-2 group-hover:text-purple-300 transition-colors">{project.title}</h3>
-              <p className="text-sm text-purple-400 mb-3 font-semibold">Jun 2024 - Sep 2024</p>
+              <p className="text-sm text-purple-400 mb-3 font-semibold">{project.period}</p>
               <p className="text-purple-200 mb-6 leading-relaxed">{project.description}</p>
               <div className="flex flex-wrap gap-2 mb-6">
                 {project.tags.map((tag, idx) => (
@@ -168,7 +176,7 @@ function Projects() {
                 <span className="px-3 py-1 bg-purple-500/30 text-purple-200 text-sm rounded-full">{project.category}</span>
               </div>
               <h3 className="text-xl font-bold text-white mb-2 group-hover:text-purple-300 transition-colors">{project.title}</h3>
-              <p className="text-sm text-purple-400 mb-3 font-semibold">{index === 0 ? "Oct 2024 - Dec 2024" : "Aug 2024 - Dec 2024"}</p>
+              <p className="text-sm text-purple-400 mb-3 font-semibold">{project.period}</p>
               <p className="text-purple-200 mb-6 leading-relaxed">{project.description}</p>
               <div className="flex flex-wrap gap-2 mb-6">
                 {project.tags.map((tag, idx) => (
@@ -206,7 +214,7 @@ function Projects() {
                 <span className="px-3 py-1 bg-purple-500/30 text-purple-200 text-sm rounded-full">{project.category}</span>
               </div>
               <h3 className="text-xl font-bold text-white mb-2 group-hover:text-purple-300 transition-colors">{project.title}</h3>
-              <p className="text-sm text-purple-400 mb-3 font-semibold">{index === 0 ? "Nov 2024 - Dec 2024" : "Jan 2025 - Mar 2025"}</p>
+              <p className="text-sm text-purple-400 mb-3 font-semibold">{project.period}</p>
               <p className="text-purple-200 mb-6 leading-relaxed">{project.description}</p>
               <div className="flex flex-wrap gap-2 mb-6">
                 {project.tags.map((tag, idx) => (
@@ -245,7 +253,7 @@ function Projects() {
                 <span className="px-3 py-1 bg-purple-500/30 text-purple-200 text-sm rounded-full">{project.category}</span>
               </div>
               <h3 className="text-xl font-bold text-white mb-2 group-hover:text-purple-300 transition-colors">{project.title}</h3>
-              <p className="text-sm text-purple-400 mb-3 font-semibold">Jan 2026 - Apr 2026</p>
+              <p className="text-sm text-purple-400 mb-3 font-semibold">{project.period}</p>
               <p className="text-purple-200 mb-6 leading-relaxed">{project.description}</p>
               <div className="flex flex-wrap gap-2 mb-6">
                 {project.tags.map((tag, idx) => (
@@ -281,7 +289,7 @@ function Projects() {
                 <span className="px-3 py-1 bg-purple-500/30 text-purple-200 text-sm rounded-full">{project.category}</span>
               </div>
               <h3 className="text-xl font-bold text-white mb-2 group-hover:text-purple-300 transition-colors">{project.title}</h3>
-              <p className="text-sm text-purple-400 mb-3 font-semibold">Jan 2025 - Apr 2025</p>
+              <p className="text-sm text-purple-400 mb-3 font-semibold">{project.period}</p>
               <p className="text-purple-200 mb-6 leading-relaxed">{project.description}</p>
               <div className="flex flex-wrap gap-2 mb-6">
                 {project.tags.map((tag, idx) => (

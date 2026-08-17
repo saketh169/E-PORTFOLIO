@@ -47,8 +47,9 @@ function Contact() {
                 
                 <div className="space-y-6">
                   {[
-                    { icon: "fas fa-envelope", label: "Email", value: "sakethpabbu.works@gmail.com", link: "mailto:sakethpabbu.works@gmail.com" },
-                    { icon: "fas fa-phone", label: "Phone", value: "+91-7075783143", link: "tel:+917075783143" },
+                    { icon: "fas fa-envelope", label: "College Email", value: "saketh.p23@iiits.in", link: "mailto:saketh.p23@iiits.in" },
+                    { icon: "fas fa-envelope", label: "Personal Email", value: "sakethpabbu.works@gmail.com", link: "mailto:sakethpabbu.works@gmail.com" },
+                    { icon: "fas fa-phone", label: "Phone", value: "+91 7075783143", link: "tel:+917075783143" },
                     { icon: "fas fa-map-marker-alt", label: "Location", value: "Nellore, Andhra Pradesh, India", link: null }
                   ].map((item, idx) => (
                     <a 
