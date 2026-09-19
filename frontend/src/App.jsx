@@ -3,10 +3,11 @@ import { HashRouter } from "react-router-dom";
 import Header from "./components/Header";
 import Intro from "./pages/Intro";
 import About from "./pages/About";
-import Education from "./pages/Education";
-import Skills from "./pages/Skills";
-import Achievements from "./pages/Achievements";
 import Experience from "./pages/Experience";
+import Projects from "./pages/Projects";
+import Skills from "./pages/Skills";
+import Education from "./pages/Education";
+import Achievements from "./pages/Achievements";
 import Contact from "./pages/Contact";
 import Footer from "./components/Footer";
 
@@ -16,9 +17,10 @@ function App() {
       <Header />
       <Intro />
       <About />
-      <Education />
-      <Skills />
       <Experience />
+      <Projects />
+      <Skills />
+      <Education />
       <Achievements />
       <Contact />
       <Footer />

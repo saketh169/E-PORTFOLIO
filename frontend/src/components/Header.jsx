@@ -10,7 +10,7 @@ function Header() {
       setIsScrolled(window.scrollY > 50);
       
       // Detect active section
-      const sections = ['intro', 'about', 'education', 'skills', 'experience', 'achievements', 'samples', 'contact'];
+      const sections = ['intro', 'about', 'experience', 'samples', 'skills', 'education', 'achievements', 'certifications', 'extracurricular', 'contact'];
       for (const section of sections) {
         const element = document.getElementById(section);
         if (element) {
@@ -44,12 +44,14 @@ function Header() {
 
   const navItems = [
     { id: 'intro', label: 'Home', icon: 'fas fa-home' },
-    { id: 'about', label: 'Personal', icon: 'fas fa-user' },
-    { id: 'education', label: 'Education', icon: 'fas fa-graduation-cap' },
-    { id: 'skills', label: 'Skills', icon: 'fas fa-lightbulb' },
+    { id: 'about', label: 'About', icon: 'fas fa-user' },
     { id: 'experience', label: 'Experience', icon: 'fas fa-briefcase' },
-    { id: 'achievements', label: 'Achievements', icon: 'fas fa-trophy' },
     { id: 'samples', label: 'Projects', icon: 'fas fa-project-diagram' },
+    { id: 'skills', label: 'Skills', icon: 'fas fa-lightbulb' },
+    { id: 'education', label: 'Education', icon: 'fas fa-graduation-cap' },
+    { id: 'achievements', label: 'Achievements', icon: 'fas fa-trophy' },
+    { id: 'certifications', label: 'Certifications', icon: 'fas fa-certificate' },
+    { id: 'extracurricular', label: 'Co-Curricular', icon: 'fas fa-palette' },
     { id: 'contact', label: 'Contact', icon: 'fas fa-envelope' },
   ];
 

@@ -1,3 +1,5 @@
+import { useState, useEffect } from 'react';
+
 // Social links data
 const socialLinks = [
   { href: "https://www.linkedin.com/in/saketh-pabbu-14342a291/", icon: "fab fa-linkedin-in", hoverBg: "hover:bg-[#0077B5]" },
@@ -7,10 +9,51 @@ const socialLinks = [
   { href: "https://leetcode.com/u/saketh1706/", icon: "fas fa-code", hoverBg: "hover:bg-[#FFA116] hover:text-black" }
 ];
 
+const typingPhrases = [
+  "Computer Science Undergrad at IIIT Sri City",
+  "Full-Stack & MERN Developer",
+  "Machine Learning & Deep Learning Practitioner",
+  "Maintaining 9.38 CGPA @ IIIT Sri City",
+  "500+ LeetCode Solved (1436 Contest Rating)"
+];
+
 // Scroll helper
 const scrollTo = (id) => document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' });
 
 function Intro() {
+  const [phraseIndex, setPhraseIndex] = useState(0);
+  const [charIndex, setCharIndex] = useState(0);
+  const [isDeleting, setIsDeleting] = useState(false);
+  const [displayText, setDisplayText] = useState('');
+
+  useEffect(() => {
+    const currentPhrase = typingPhrases[phraseIndex];
+    let speed = isDeleting ? 35 : 75;
+
+    if (!isDeleting && charIndex === currentPhrase.length) {
+      speed = 2000;
+    } else if (isDeleting && charIndex === 0) {
+      speed = 350;
+    }
+
+    const timer = setTimeout(() => {
+      if (!isDeleting && charIndex < currentPhrase.length) {
+        setDisplayText(currentPhrase.substring(0, charIndex + 1));
+        setCharIndex(prev => prev + 1);
+      } else if (!isDeleting && charIndex === currentPhrase.length) {
+        setIsDeleting(true);
+      } else if (isDeleting && charIndex > 0) {
+        setDisplayText(currentPhrase.substring(0, charIndex - 1));
+        setCharIndex(prev => prev - 1);
+      } else if (isDeleting && charIndex === 0) {
+        setIsDeleting(false);
+        setPhraseIndex(prev => (prev + 1) % typingPhrases.length);
+      }
+    }, speed);
+
+    return () => clearTimeout(timer);
+  }, [charIndex, isDeleting, phraseIndex]);
+
   return (
     <section id="intro" className="min-h-screen bg-linear-to-br from-purple-900 via-purple-700 to-indigo-800 text-white flex items-center pt-40 sm:pt-36 pb-16 sm:pb-20 relative overflow-hidden border-b-4 border-purple-500/30">
       {/* Animated background */}
@@ -25,7 +68,7 @@ function Intro() {
           {/* Left - Introduction */}
           <div className="flex flex-col items-center text-center lg:items-start lg:text-left space-y-4 sm:space-y-6 animate-fade-in-left mt-8 sm:mt-16 xl:col-span-1 px-2 sm:px-0">
             <div className="space-y-2">
-              <p className="text-purple-200 text-sm sm:text-lg font-medium tracking-wider uppercase">Welcome to my portfolio</p>
+              <p className="text-purple-200 text-sm sm:text-lg font-semibold tracking-wider uppercase">Full-Stack & Machine Learning</p>
               <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold leading-tight">
                 Hello, I'm <br />
                 <span className="bg-linear-to-r from-yellow-300 via-pink-300 to-purple-300 bg-clip-text text-transparent animate-gradient bg-size-[200%_auto]">
@@ -33,8 +76,9 @@ function Intro() {
                 </span>
               </h1>
             </div>
-            <p className="text-lg sm:text-xl md:text-2xl text-purple-100 font-light">
-              A Passionate <span className="font-semibold text-yellow-300">Full-Stack Developer</span>
+            <p className="text-lg sm:text-xl md:text-2xl text-purple-100 font-light min-h-[2.5rem]">
+              <span className="font-semibold text-yellow-300">{displayText}</span>
+              <span className="animate-pulse border-r-2 border-yellow-300 ml-1"></span>
             </p>
             
             {/* CTA Buttons */}
@@ -55,7 +99,7 @@ function Intro() {
             
             {/* Social Icons */}
             <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-2 sm:gap-4">
-              <span className="text-purple-200 text-xs sm:text-sm font-medium">Connect with me:</span>
+              <span className="text-purple-200 text-xs sm:text-sm font-medium">Connect:</span>
               <div className="flex justify-center gap-2 sm:gap-3">
                 {socialLinks.map((link, idx) => (
                   <a 
@@ -77,15 +121,15 @@ function Intro() {
               download="Saketh_Pabbu_Resume.pdf"
               className="inline-flex items-center gap-2 text-purple-200 hover:text-white text-xs sm:text-sm font-medium px-3 sm:px-4 py-2 border border-white/60 rounded-full hover:border-white/90 hover:bg-white/10 backdrop-blur-sm transition-all duration-300 mx-auto lg:mx-0"
             >
-              <i className="fas fa-download" /> Download my CV
+              <i className="fas fa-download" /> Download Resume (PDF)
             </a>
           </div>
           
-          {/* Middle - Code Block & Icons */}
+          {/* Middle - Code Block & Revolving Orbit Icons */}
           <div className="flex flex-col items-center space-y-6 lg:space-y-8 animate-fade-in-up xl:col-span-1 lg:order-2 xl:order-0 relative">
             <div className="relative">
               {/* Code Block */}
-              <div className="bg-gray-900/90 backdrop-blur-xl p-3 md:p-4 lg:p-6 rounded-2xl font-mono text-xs md:text-sm shadow-2xl border border-purple-500/30 w-full max-w-xs md:max-w-sm lg:max-w-md card-hover mx-auto relative">
+              <div className="bg-gray-900/90 backdrop-blur-xl p-4 md:p-6 lg:p-8 rounded-3xl font-mono text-xs md:text-sm shadow-2xl border border-purple-500/30 w-full max-w-xs md:max-w-sm lg:max-w-md card-hover mx-auto relative">
                 <div className="flex items-center space-x-2 mb-3 lg:mb-4 pb-2 lg:pb-3 border-b border-gray-700">
                   <div className="w-3 h-3 rounded-full bg-red-500"></div>
                   <div className="w-3 h-3 rounded-full bg-yellow-500"></div>
@@ -94,13 +138,15 @@ function Intro() {
                 </div>
                 <div className="text-purple-400 text-xs md:text-sm">const <span className="text-blue-400">developer</span> = {'{'}</div>
                 <div className="ml-3 md:ml-4 text-gray-300 text-xs md:text-sm">name: <span className="text-green-400">"Saketh Pabbu"</span>,</div>
-                <div className="ml-3 md:ml-4 text-gray-300 text-xs md:text-sm">passion: <span className="text-green-400">"Full-Stack Dev"</span>,</div>
+                <div className="ml-3 md:ml-4 text-gray-300 text-xs md:text-sm">role: <span className="text-green-400">"CS @ IIIT Sri City"</span>,</div>
+                <div className="ml-3 md:ml-4 text-gray-300 text-xs md:text-sm">cgpa: <span className="text-amber-400">9.38</span>,</div>
+                <div className="ml-3 md:ml-4 text-gray-300 text-xs md:text-sm">leetCode: <span className="text-green-400">"500+ Solved"</span>,</div>
                 <div className="ml-3 md:ml-4 text-gray-300 text-xs md:text-sm">skills: [</div>
-                <div className="ml-6 md:ml-8 text-yellow-400 text-xs md:text-sm">"React", "Java", "Python", "Express"</div>
-                <div className="ml-3 md:ml-4 text-gray-300 text-xs md:text-sm">],</div>
-                <div className="ml-3 md:ml-4 text-gray-300 text-xs md:text-sm">status: <span className="text-green-400">"Available"</span></div>
+                <div className="ml-6 md:ml-8 text-yellow-400 text-xs md:text-sm">"React", "Node.js", "Java", "Python"</div>
+                <div className="ml-3 md:ml-4 text-gray-300 text-xs md:text-sm">]</div>
                 <div className="text-purple-400 text-xs md:text-sm">{'}'};</div>
               </div>
+              
               {/* Revolving icons in circular orbit */}
               <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
                 <div className="orbit-container">

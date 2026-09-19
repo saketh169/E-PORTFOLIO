@@ -1,7 +1,13 @@
-import Projects from './Projects';
-
 function Achievements() {
   const achievements = [
+    {
+      icon: "fas fa-award",
+      title: "Certificate of Academic Excellence",
+      subtitle: "IIIT Sri City (Every Academic Year)",
+      description: "Awarded the Certificate of Academic Excellence for consistently maintaining a 9.0+ CGPA (current 9.38 CGPA) across all academic years.",
+      color: "from-amber-400 to-yellow-500",
+      highlight: true
+    },
     {
       icon: "fas fa-trophy",
       title: "Agentica AI Hackathon 2025",
@@ -67,14 +73,14 @@ function Achievements() {
   const extracurriculars = [
     {
       title: "Decoration Team Member",
-      organization: "Abhisarga Fest | 02/2025 - 02/2026",
-      description: "Designed and implemented creative designs to enhance the visual appeal and festive atmosphere of the college event.",
+      organization: "Abhisarga Fest | IIIT Sri City (02/2025, 02/2026)",
+      description: "Designed and implemented creative venue decorations to enhance the visual appeal and festive atmosphere of the annual techno-cultural college fest.",
       icon: "fas fa-palette"
     },
     {
-      title: "Independence Day Meraki Team",
-      organization: "College Event | 08/2024",
-      description: "Collaborated to craft thematic arrangements for college Independence Day celebrations, establishing a patriotic setting.",
+      title: "Independence Day Meraki Team Member",
+      organization: "College Event | IIIT Sri City (08/2024)",
+      description: "Collaborated to craft thematic arrangements for college Independence Day celebrations, establishing an inspiring event environment.",
       icon: "fas fa-flag"
     }
   ];
@@ -88,7 +94,7 @@ function Achievements() {
         
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center mb-16">
-            <span className="text-purple-600 font-semibold text-lg tracking-wider uppercase">Recognition</span>
+            <span className="text-purple-600 font-semibold text-lg tracking-wider uppercase">HONORS & AWARDS</span>
             <h2 className="text-5xl font-bold mt-2 bg-linear-to-r from-yellow-500 via-purple-600 to-pink-600 bg-clip-text text-transparent">Achievements & Awards</h2>
             <div className="w-24 h-1 bg-linear-to-r from-yellow-500 to-pink-600 mx-auto mt-4 rounded-full"></div>
           </div>
@@ -104,8 +110,8 @@ function Achievements() {
                 
                 {achievement.highlight && (
                   <div className="absolute top-4 right-4">
-                    <span className="px-3 py-1 bg-linear-to-r from-yellow-400 to-orange-500 text-white text-xs font-bold rounded-full animate-pulse">
-                      TOP ACHIEVEMENT
+                    <span className="px-3 py-1 bg-amber-500 text-white text-xs font-bold rounded-full">
+                      FEATURED
                     </span>
                   </div>
                 )}
@@ -123,15 +129,13 @@ function Achievements() {
         </div>
       </section>
 
-      <Projects />
-
       {/* Certifications Section */}
       <section id="certifications" className="py-16 bg-linear-to-b from-purple-100 to-white relative overflow-hidden border-b-4 border-purple-200/50">
         <div className="absolute top-20 right-10 w-72 h-72 bg-blue-200/30 rounded-full blur-3xl"></div>
         
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center mb-16">
-            <span className="text-purple-600 font-semibold text-lg tracking-wider uppercase">Professional Development</span>
+            <span className="text-purple-600 font-semibold text-lg tracking-wider uppercase">CERTIFICATIONS & TRAINING</span>
             <h2 className="text-5xl font-bold mt-2 bg-linear-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">Certifications</h2>
             <div className="w-24 h-1 bg-linear-to-r from-blue-600 to-purple-600 mx-auto mt-4 rounded-full"></div>
           </div>
@@ -164,7 +168,7 @@ function Achievements() {
         
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center mb-16">
-            <span className="text-purple-600 font-semibold text-lg tracking-wider uppercase">Beyond Academics</span>
+            <span className="text-purple-600 font-semibold text-lg tracking-wider uppercase">CO-CURRICULAR & ACTIVITIES</span>
             <h2 className="text-5xl font-bold mt-2 bg-linear-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">Co-Curricular Activities</h2>
             <div className="w-24 h-1 bg-linear-to-r from-purple-600 to-pink-600 mx-auto mt-4 rounded-full"></div>
           </div>

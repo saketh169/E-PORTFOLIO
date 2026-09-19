@@ -8,35 +8,41 @@ function Experience() {
       period: "07/2026 – 08/2026",
       icon: "fas fa-code-branch",
       color: "from-purple-600 to-indigo-600",
-      description: "Developed a School ERP system with role-based access control for super admins, principals, teachers, and students. Collaborated in a team of 3 using GitLab to build scalable components and ensure industry-standard code quality.",
-      skills: ["React", "Role-Based Access Control", "GitLab", "Full-Stack Development", "Team Collaboration"]
+      description: "Developed a comprehensive School ERP platform with granular role-based access control and scalable web components.",
+      bullets: [
+        "Architected a School ERP system with role-based access control (RBAC) across super admin, principal, teacher, and student portals.",
+        "Built modular full-stack UI components in React and optimized backend API response handling in Express/Node.js.",
+        "Collaborated in a team of 3 using GitLab for version control, merge requests, code reviews, and industry-standard workflows."
+      ],
+      skills: ["React", "Node.js", "Role-Based Access Control", "REST APIs", "GitLab", "Team Collaboration"]
+    },
+    {
+      title: "UI/UX & Web Design Intern",
+      company: "InAmigos Foundation (Virtual)",
+      period: "08/2025 – 09/2025",
+      icon: "fas fa-figma",
+      color: "from-emerald-500 to-teal-600",
+      description: "Analyzed NGO web platforms and designed high-fidelity UI/UX feature proposals and Figma wireframes.",
+      bullets: [
+        "Analyzed NGO website architecture to identify usability gaps, navigation friction, and transparency improvement opportunities.",
+        "Created interactive wireframes, component libraries, and high-fidelity feature proposals in Figma to optimize donation flows.",
+        "Redesigned volunteer engagement interfaces and community outreach pages to boost donor trust and user retention."
+      ],
+      skills: ["Figma", "UI/UX Design", "Wireframing", "Usability Testing", "Web Design", "Design Thinking"]
     },
     {
       title: "Full Stack Web Development & AI-Integrated Marketing Intern",
       company: "Myna Seva Foundation (Virtual)",
       period: "07/2025 – 08/2025",
       icon: "fas fa-laptop-code",
-      color: "from-indigo-500 to-purple-500",
-      description: "Designed and customized websites using WordPress, Wix, and Google Sites while applying basic UI/UX design principles. Created promotional visuals using Canva to support community initiatives and improve online engagement.",
-      skills: ["WordPress", "Wix", "Google Sites", "UI/UX Design", "Canva", "Digital Marketing"]
-    },
-    {
-      title: "Decoration Team Member",
-      company: "Abhisarga Fest | IIIT Sri City",
-      period: "02/2025, 02/2026",
-      icon: "fas fa-palette",
-      color: "from-pink-500 to-purple-600",
-      description: "Designed and set up creative decorations to enhance the visual appeal and festive atmosphere of the annual techno-cultural college fest across 3 days.",
-      skills: ["Event Decoration", "Creative Design", "Team Coordination", "Venue Management"]
-    },
-    {
-      title: "Independence Day Meraki Team Member",
-      company: "College Event | IIIT Sri City",
-      period: "08/2024",
-      icon: "fas fa-flag",
-      color: "from-orange-500 to-amber-600",
-      description: "Collaborated to set up thematic arrangements for college Independence Day celebrations, creating an inspiring and patriotic environment.",
-      skills: ["Thematic Setup", "Teamwork", "Event Logistics", "Creative Execution"]
+      color: "from-amber-500 to-orange-600",
+      description: "Completed a 4-week internship focused on Full Stack Web Development and AI-Integrated Marketing Strategies.",
+      bullets: [
+        "Architected and customized responsive website platforms across Wix, Google Sites, WordPress, and Blogger to expand community reach.",
+        "Formulated smart AI-integrated marketing strategies and promotional campaigns to amplify non-profit visibility and engagement.",
+        "Collaborated through regular instructor-led reviews and team meetings to execute web building and digital outreach initiatives."
+      ],
+      skills: ["Full Stack Web Dev", "WordPress", "Wix", "Google Sites", "Blogger", "AI Marketing", "Digital Strategy"]
     }
   ];
 
@@ -48,7 +54,7 @@ function Experience() {
       
       <div className="w-4/5 mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center mb-16">
-          <span className="text-purple-600 font-semibold text-lg tracking-wider uppercase">My Journey</span>
+          <span className="text-purple-600 font-semibold text-lg tracking-wider uppercase">WORK EXPERIENCE & INTERNSHIPS</span>
           <h2 className="text-5xl font-bold mt-2 bg-linear-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">Work Experience</h2>
           <div className="w-24 h-1 bg-linear-to-r from-purple-600 to-pink-600 mx-auto mt-4 rounded-full"></div>
         </div>
@@ -75,9 +81,20 @@ function Experience() {
                         {exp.period}
                       </span>
                     </div>
-                    <h3 className="text-xl font-bold text-gray-800 mb-2">{exp.title}</h3>
-                    <p className={`text-transparent bg-linear-to-r ${exp.color} bg-clip-text font-semibold mb-4`}>{exp.company}</p>
-                    <p className="text-gray-600 mb-6 leading-relaxed">{exp.description}</p>
+                    <h3 className="text-2xl font-bold text-gray-900 mb-1">{exp.company}</h3>
+                    <h4 className={`text-base font-semibold text-transparent bg-linear-to-r ${exp.color} bg-clip-text mb-4`}>{exp.title}</h4>
+                    {exp.bullets ? (
+                      <ul className="space-y-2 text-gray-600 mb-6 text-sm sm:text-base leading-relaxed">
+                        {exp.bullets.map((bullet, bIdx) => (
+                          <li key={bIdx} className="flex items-start gap-2">
+                            <span className="text-purple-600 font-bold mt-1">•</span>
+                            <span>{bullet}</span>
+                          </li>
+                        ))}
+                      </ul>
+                    ) : (
+                      <p className="text-gray-600 mb-6 leading-relaxed">{exp.description}</p>
+                    )}
                     <div className="flex flex-wrap gap-2">
                       {exp.skills.map((skill, idx) => (
                         <span 

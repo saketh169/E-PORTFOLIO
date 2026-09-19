@@ -16,7 +16,7 @@ function Education() {
       degree: "Intermediate / 12th Grade",
       institution: "Narayana Junior College, Nellore, Andhra Pradesh",
       grade: "Percentage: 98.7%",
-      period: "Jun 2021 - Jun 2023",
+      period: "06/2021 – 06/2023",
       description: "Excelled in Mathematics, Physics, and Chemistry, actively solving complex problems to build a strong foundation for computer science. Dedicated significant time preparing for competitive exams like JEE and EAMCET.",
       highlights: ["Mathematics", "Physics", "Chemistry", "JEE Preparation"]
     },
@@ -25,7 +25,7 @@ function Education() {
       degree: "10th Grade",
       institution: "Sri Netaji M.S.R Pilot High School, Nellore, Andhra Pradesh",
       grade: "Percentage: 100%",
-      period: "Jun 2010 - Jun 2021",
+      period: "06/2010 – 06/2021",
       description: "Studied at a reputed school and developed a strong foundation with great knowledge in Mathematics, Physics, Biology, and Social Studies. Participated in school-level coding and science projects.",
       highlights: ["Mathematics", "Physics", "Biology", "Science Projects"]
     }
@@ -39,7 +39,7 @@ function Education() {
       
       <div className="w-full sm:w-4/5 mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center mb-10 sm:mb-16">
-          <span className="text-purple-600 font-semibold text-sm sm:text-lg tracking-wider uppercase">My Academic Journey</span>
+          <span className="text-purple-600 font-semibold text-sm sm:text-lg tracking-wider uppercase">ACADEMIC BACKGROUND</span>
           <h2 className="text-3xl sm:text-5xl font-bold mt-2 bg-linear-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">Education</h2>
           <div className="w-16 sm:w-24 h-1 bg-linear-to-r from-purple-600 to-pink-600 mx-auto mt-4 rounded-full" />
         </div>

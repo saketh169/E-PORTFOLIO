@@ -85,7 +85,7 @@ function Skills() {
       
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center mb-16">
-          <span className="text-purple-600 font-semibold text-lg tracking-wider uppercase">What I Excel At</span>
+          <span className="text-purple-600 font-semibold text-lg tracking-wider uppercase">TECHNICAL STACK</span>
           <h2 className="text-5xl font-bold mt-2 bg-linear-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">Skills & Expertise</h2>
           <div className="w-24 h-1 bg-linear-to-r from-purple-600 to-pink-600 mx-auto mt-4 rounded-full"></div>
         </div>
