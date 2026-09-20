@@ -4,23 +4,25 @@ function Experience() {
   const experiences = [
     {
       title: "Full Stack Developer Intern",
-      company: "Code My FYP (Virtual)",
+      company: "Code My FYP",
+      location: "Remote",
       period: "07/2026 – 08/2026",
-      icon: "fas fa-code-branch",
+      icon: "fas fa-graduation-cap",
       color: "from-purple-600 to-indigo-600",
       description: "Developed a comprehensive School ERP platform with granular role-based access control and scalable web components.",
       bullets: [
         "Architected a School ERP system with role-based access control (RBAC) across super admin, principal, teacher, and student portals.",
-        "Built modular full-stack UI components in React and optimized backend API response handling in Express/Node.js.",
-        "Collaborated in a team of 3 using GitLab for version control, merge requests, code reviews, and industry-standard workflows."
+        "Built modular frontend interfaces in React and developed robust backend REST APIs using Java Spring Boot with PostgreSQL database integration.",
+        "Collaborated in a team of 3 using GitLab for version control, merge requests, code reviews, and industry-standard CI/CD workflows."
       ],
-      skills: ["React", "Node.js", "Role-Based Access Control", "REST APIs", "GitLab", "Team Collaboration"]
+      skills: ["React", "Spring Boot", "Java", "PostgreSQL", "RBAC", "REST APIs", "GitLab"]
     },
     {
       title: "UI/UX & Web Design Intern",
-      company: "InAmigos Foundation (Virtual)",
-      period: "08/2025 – 09/2025",
-      icon: "fas fa-figma",
+      company: "InAmigos Foundation",
+      location: "Remote",
+      period: "08/2025 – 02/2026",
+      icon: "fas fa-palette",
       color: "from-emerald-500 to-teal-600",
       description: "Analyzed NGO web platforms and designed high-fidelity UI/UX feature proposals and Figma wireframes.",
       bullets: [
@@ -32,11 +34,12 @@ function Experience() {
     },
     {
       title: "Full Stack Web Development & AI-Integrated Marketing Intern",
-      company: "Myna Seva Foundation (Virtual)",
+      company: "Myna Seva Foundation",
+      location: "Remote",
       period: "07/2025 – 08/2025",
-      icon: "fas fa-laptop-code",
+      icon: "fas fa-globe",
       color: "from-amber-500 to-orange-600",
-      description: "Completed a 4-week internship focused on Full Stack Web Development and AI-Integrated Marketing Strategies.",
+      description: "Completed an internship focused on Full Stack Web Development and AI-Integrated Marketing Strategies.",
       bullets: [
         "Architected and customized responsive website platforms across Wix, Google Sites, WordPress, and Blogger to expand community reach.",
         "Formulated smart AI-integrated marketing strategies and promotional campaigns to amplify non-profit visibility and engagement.",
@@ -72,14 +75,19 @@ function Experience() {
               >
                 {/* Content */}
                 <div className="flex-1 md:w-1/2">
-                  <div className={`bg-white rounded-3xl shadow-xl p-8 border border-purple-100 hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 ${index % 2 === 0 ? 'md:mr-8' : 'md:ml-8'}`}>
+                  <div className={`bg-white rounded-3xl shadow-xl p-8 border-2 border-purple-200 hover:border-purple-400 hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 ${index % 2 === 0 ? 'md:mr-8' : 'md:ml-8'}`}>
                     <div className="flex items-start justify-between mb-4">
                       <div className={`w-16 h-16 bg-linear-to-br ${exp.color} rounded-2xl flex items-center justify-center text-3xl shadow-lg`}>
                         <i className={`${exp.icon} text-white`}></i>
                       </div>
-                      <span className="text-sm font-medium text-purple-600 bg-purple-100 px-4 py-2 rounded-full">
-                        {exp.period}
-                      </span>
+                      <div className="flex flex-col items-end gap-1.5">
+                        <span className="text-sm font-medium text-purple-600 bg-purple-100 px-4 py-1.5 rounded-full shadow-xs">
+                          {exp.period}
+                        </span>
+                        <span className="text-xs font-semibold uppercase tracking-wider text-emerald-700 bg-emerald-50 border border-emerald-200 px-3 py-0.5 rounded-full flex items-center gap-1 shadow-xs">
+                          <i className="fas fa-laptop-house text-emerald-500"></i> {exp.location}
+                        </span>
+                      </div>
                     </div>
                     <h3 className="text-2xl font-bold text-gray-900 mb-1">{exp.company}</h3>
                     <h4 className={`text-base font-semibold text-transparent bg-linear-to-r ${exp.color} bg-clip-text mb-4`}>{exp.title}</h4>

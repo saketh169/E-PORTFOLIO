@@ -68,7 +68,7 @@ function Intro() {
           {/* Left - Introduction */}
           <div className="flex flex-col items-center text-center lg:items-start lg:text-left space-y-4 sm:space-y-6 animate-fade-in-left mt-8 sm:mt-16 xl:col-span-1 px-2 sm:px-0">
             <div className="space-y-2">
-              <p className="text-purple-200 text-sm sm:text-lg font-semibold tracking-wider uppercase">Full-Stack & Machine Learning</p>
+              <p className="text-purple-200 text-sm sm:text-lg font-semibold tracking-wider uppercase">Full Stack Web Developer</p>
               <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold leading-tight">
                 Hello, I'm <br />
                 <span className="bg-linear-to-r from-yellow-300 via-pink-300 to-purple-300 bg-clip-text text-transparent animate-gradient bg-size-[200%_auto]">
@@ -129,7 +129,7 @@ function Intro() {
           <div className="flex flex-col items-center space-y-6 lg:space-y-8 animate-fade-in-up xl:col-span-1 lg:order-2 xl:order-0 relative">
             <div className="relative">
               {/* Code Block */}
-              <div className="bg-gray-900/90 backdrop-blur-xl p-4 md:p-6 lg:p-8 rounded-3xl font-mono text-xs md:text-sm shadow-2xl border border-purple-500/30 w-full max-w-xs md:max-w-sm lg:max-w-md card-hover mx-auto relative">
+              <div className="bg-gray-900/90 backdrop-blur-xl p-4 md:p-6 lg:p-8 rounded-3xl font-mono text-xs md:text-sm shadow-2xl border-2 border-purple-400/50 w-full max-w-xs md:max-w-sm lg:max-w-md card-hover mx-auto relative">
                 <div className="flex items-center space-x-2 mb-3 lg:mb-4 pb-2 lg:pb-3 border-b border-gray-700">
                   <div className="w-3 h-3 rounded-full bg-red-500"></div>
                   <div className="w-3 h-3 rounded-full bg-yellow-500"></div>
@@ -142,7 +142,7 @@ function Intro() {
                 <div className="ml-3 md:ml-4 text-gray-300 text-xs md:text-sm">cgpa: <span className="text-amber-400">9.38</span>,</div>
                 <div className="ml-3 md:ml-4 text-gray-300 text-xs md:text-sm">leetCode: <span className="text-green-400">"500+ Solved"</span>,</div>
                 <div className="ml-3 md:ml-4 text-gray-300 text-xs md:text-sm">skills: [</div>
-                <div className="ml-6 md:ml-8 text-yellow-400 text-xs md:text-sm">"React", "Node.js", "Java", "Python"</div>
+                <div className="ml-6 md:ml-8 text-yellow-400 text-xs md:text-sm">"MERN", "Java", "Python", "C"</div>
                 <div className="ml-3 md:ml-4 text-gray-300 text-xs md:text-sm">]</div>
                 <div className="text-purple-400 text-xs md:text-sm">{'}'};</div>
               </div>

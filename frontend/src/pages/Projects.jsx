@@ -1,7 +1,7 @@
 function Projects() {
   const projects = [
     {
-      icon: "fas fa-copy",
+      icon: "fas fa-images",
       category: "Deep Learning & Research",
       title: "Image Copy Detection for E-Commerce Platforms",
       period: "12/2025 – 05/2026",
@@ -16,7 +16,7 @@ function Projects() {
       tags: ["CNN", "Siamese Network", "OpenCV", "ConvNeXt", "HNSW Graph Indexing"]
     },
     {
-      icon: "fas fa-laptop",
+      icon: "fas fa-utensils",
       category: "MERN Stack",
       title: "Nutri Connect Web Application",
       period: "01/2025 – 06/2026",
@@ -31,7 +31,7 @@ function Projects() {
       tags: ["MERN Stack", "Render", "MVC", "Redux", "Swagger", "MongoDB"]
     },
     {
-      icon: "fas fa-balance-scale",
+      icon: "fas fa-server",
       category: "Cloud Computing",
       title: "Hybrid Load Balancing for QoS in Cloud",
       period: "09/2025 – 12/2025",
@@ -46,7 +46,7 @@ function Projects() {
       tags: ["AWS", "Python", "Round Robin", "ACO Algorithm", "Q-Learning"]
     },
     {
-      icon: "fas fa-microchip",
+      icon: "fas fa-vest",
       category: "IoT & ML",
       title: "IoT-Based Smart Jacket with ML Analytics",
       period: "09/2025 – 12/2025",
@@ -61,7 +61,7 @@ function Projects() {
       tags: ["IoT", "Blynk API", "ESP32", "Flask", "Machine Learning"]
     },
     {
-      icon: "fas fa-network-wired",
+      icon: "fas fa-handshake",
       category: "MERN Stack",
       title: "Nexus Platform - Local Service Booking",
       period: "11/2024 – 12/2024",
@@ -76,7 +76,7 @@ function Projects() {
       tags: ["React", "Node.js", "MongoDB", "Redux", "Express"]
     },
     {
-      icon: "fas fa-leaf",
+      icon: "fas fa-apple-alt",
       category: "Deep Learning",
       title: "Food Ripeness Classification using CNN",
       period: "01/2025 – 03/2025",
@@ -91,7 +91,7 @@ function Projects() {
       tags: ["PyTorch", "CNN", "Streamlit", "Explainability", "Python"]
     },
     {
-      icon: "fas fa-map",
+      icon: "fas fa-map-marked-alt",
       category: "GIS & Remote Sensing",
       title: "IT Park Suitability Analysis - Bangalore",
       period: "01/2026 – 04/2026",
@@ -106,7 +106,7 @@ function Projects() {
       tags: ["QGIS", "Landsat 9", "MCDA", "Spatial Analysis", "EPSG:32643"]
     },
     {
-      icon: "fas fa-truck",
+      icon: "fas fa-route",
       category: "Reinforcement Learning",
       title: "Unmanned Vehicle Scheduling (UVS) AI",
       period: "01/2025 – 04/2025",
@@ -140,7 +140,7 @@ function Projects() {
           {projects.map((project, index) => (
             <div
               key={index}
-              className="group bg-white/10 backdrop-blur-sm rounded-3xl p-6 sm:p-8 border border-purple-400/30 hover:border-purple-400 hover:bg-white/15 transition-all duration-500 transform hover:-translate-y-2 flex flex-col justify-between"
+              className="group bg-white/10 backdrop-blur-sm rounded-3xl p-6 sm:p-8 border-2 border-purple-400/40 hover:border-purple-300 hover:bg-white/15 transition-all duration-500 transform hover:-translate-y-2 flex flex-col justify-between shadow-xl"
             >
               <div>
                 <div className="flex items-center justify-between mb-4">

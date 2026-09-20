@@ -40,7 +40,7 @@ function Footer() {
               <h3 className="text-3xl font-bold bg-linear-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
                 Saketh Pabbu
               </h3>
-              <p className="text-purple-300 font-medium mt-1">Full-Stack Developer</p>
+              <p className="text-purple-300 font-medium mt-1">Full Stack Web Developer</p>
             </div>
             <p className="text-gray-400 leading-relaxed mb-6">
               Passionate Computer Science student driven to innovate through full-stack development, AI, and data science.
@@ -91,7 +91,8 @@ function Footer() {
             </h4>
             <div className="space-y-4">
               {[
-                { icon: 'fas fa-envelope', text: 'sakethpabbu.works@gmail.com' },
+                { icon: 'fas fa-envelope', text: 'saketh.p23@iiits.in (College)' },
+                { icon: 'fas fa-envelope', text: 'sakethpabbu.works@gmail.com (Personal)' },
                 { icon: 'fas fa-phone', text: '+91 7075783143' },
                 { icon: 'fas fa-map-marker-alt', text: 'Nellore, Andhra Pradesh' }
               ].map((item, idx) => (

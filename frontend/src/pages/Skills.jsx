@@ -21,58 +21,58 @@ function Skills() {
       title: "Programming Languages",
       icon: "fas fa-keyboard",
       skills: [
-        { name: "Java", icon: "fab fa-java", level: 90 },
-        { name: "C", icon: "fas fa-cog", level: 85 },
-        { name: "Python", icon: "fab fa-python", level: 88 }
+        { name: "Java", icon: "fab fa-java text-red-600", level: 90 },
+        { name: "C", icon: "fas fa-terminal text-blue-600", level: 85 },
+        { name: "Python", icon: "fab fa-python text-yellow-600", level: 88 }
       ]
     },
     {
       title: "Full-Stack Web Development",
       icon: "fas fa-globe",
       skills: [
-        { name: "HTML", icon: "fab fa-html5", level: 95 },
-        { name: "CSS", icon: "fab fa-css3", level: 90 },
-        { name: "JavaScript", icon: "fab fa-js", level: 85 },
-        { name: "React", icon: "fab fa-react", level: 85 },
-        { name: "MERN Stack", icon: "fas fa-layer-group", level: 88 },
-        { name: "Node.js", icon: "fab fa-node-js", level: 82 },
-        { name: "Express", icon: "fas fa-server", level: 82 },
-        { name: "Spring Boot", icon: "fas fa-leaf", level: 75 },
-        { name: "GraphQL", icon: "fas fa-project-diagram", level: 75 },
-        { name: "MySQL", icon: "fas fa-database", level: 80 },
-        { name: "MongoDB", icon: "fas fa-leaf", level: 82 },
-        { name: "Tailwind CSS", icon: "fas fa-wind", level: 90 },
-        { name: "Bootstrap", icon: "fab fa-bootstrap", level: 85 },
-        { name: "EJS", icon: "fas fa-file-code", level: 80 }
+        { name: "HTML", icon: "fab fa-html5 text-orange-600", level: 95 },
+        { name: "CSS", icon: "fab fa-css3 text-blue-500", level: 90 },
+        { name: "JavaScript", icon: "fab fa-js text-yellow-500", level: 85 },
+        { name: "React", icon: "fab fa-react text-cyan-500", level: 85 },
+        { name: "MERN Stack", icon: "fas fa-layer-group text-purple-600", level: 88 },
+        { name: "Node.js", icon: "fab fa-node-js text-green-600", level: 82 },
+        { name: "Express", icon: "fas fa-server text-gray-700", level: 82 },
+        { name: "Spring Boot", icon: "fas fa-leaf text-green-500", level: 75 },
+        { name: "GraphQL", icon: "fas fa-project-diagram text-pink-600", level: 75 },
+        { name: "MySQL", icon: "fas fa-database text-blue-600", level: 80 },
+        { name: "MongoDB", icon: "fas fa-database text-emerald-600", level: 82 },
+        { name: "Tailwind CSS", icon: "fas fa-wind text-teal-400", level: 90 },
+        { name: "Bootstrap", icon: "fab fa-bootstrap text-purple-700", level: 85 },
+        { name: "EJS", icon: "fas fa-file-code text-indigo-600", level: 80 }
       ]
     },
     {
       title: "Tools & Platforms",
       icon: "fas fa-tools",
       skills: [
-        { name: "Linux", icon: "fab fa-linux", level: 80 },
-        { name: "Git", icon: "fab fa-git", level: 88 },
-        { name: "GitHub", icon: "fab fa-github", level: 90 },
-        { name: "Docker", icon: "fab fa-docker", level: 80 },
-        { name: "Postman", icon: "fas fa-flask", level: 85 },
-        { name: "Swagger", icon: "fas fa-file-code", level: 80 },
-        { name: "CI/CD", icon: "fas fa-infinity", level: 78 },
-        { name: "Matlab", icon: "fas fa-square-root-alt", level: 75 },
-        { name: "Vercel", icon: "fas fa-cloud", level: 85 },
-        { name: "Render", icon: "fas fa-server", level: 82 },
-        { name: "AWS", icon: "fab fa-aws", level: 78 }
+        { name: "Linux", icon: "fab fa-linux text-yellow-500", level: 80 },
+        { name: "Git", icon: "fab fa-git text-orange-600", level: 88 },
+        { name: "GitHub", icon: "fab fa-github text-gray-900", level: 90 },
+        { name: "Docker", icon: "fab fa-docker text-blue-500", level: 80 },
+        { name: "Postman", icon: "fas fa-flask text-orange-500", level: 85 },
+        { name: "Swagger", icon: "fas fa-file-code text-green-600", level: 80 },
+        { name: "CI/CD", icon: "fas fa-infinity text-purple-600", level: 78 },
+        { name: "Matlab", icon: "fas fa-square-root-alt text-red-500", level: 75 },
+        { name: "Vercel", icon: "fas fa-cloud text-black", level: 85 },
+        { name: "Render", icon: "fas fa-server text-cyan-600", level: 82 },
+        { name: "AWS", icon: "fab fa-aws text-orange-400", level: 78 }
       ]
     },
     {
       title: "Libraries & Frameworks",
       icon: "fas fa-book",
       skills: [
-        { name: "Pandas", icon: "fas fa-table", level: 82 },
-        { name: "Matplotlib", icon: "fas fa-chart-line", level: 80 },
-        { name: "Seaborn", icon: "fas fa-chart-bar", level: 78 },
-        { name: "OpenCV", icon: "fas fa-image", level: 82 },
-        { name: "NumPy", icon: "fas fa-calculator", level: 82 },
-        { name: "PyTorch", icon: "fas fa-cube", level: 78 }
+        { name: "Pandas", icon: "fas fa-table text-blue-800", level: 82 },
+        { name: "Matplotlib", icon: "fas fa-chart-line text-amber-600", level: 80 },
+        { name: "Seaborn", icon: "fas fa-chart-bar text-teal-600", level: 78 },
+        { name: "OpenCV", icon: "fas fa-image text-emerald-500", level: 82 },
+        { name: "NumPy", icon: "fas fa-calculator text-blue-400", level: 82 },
+        { name: "PyTorch", icon: "fas fa-cube text-red-600", level: 78 }
       ]
     }
   ];
@@ -102,7 +102,7 @@ function Skills() {
               
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
                 {category.skills.map((skill, skillIndex) => (
-                  <div key={skillIndex} className="group bg-white p-6 rounded-2xl shadow-lg border border-purple-100 card-hover">
+                  <div key={skillIndex} className="group bg-white p-6 rounded-2xl shadow-lg border-2 border-purple-200 hover:border-purple-400 card-hover">
                     <div className="flex items-center">
                       <i className={`${skill.icon} text-3xl mr-3 group-hover:scale-110 transition-transform`}></i>
                       <span className="text-lg font-semibold text-gray-800">{skill.name}</span>
@@ -123,7 +123,7 @@ function Skills() {
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
               {csFundamentals.map((item, idx) => (
-                <div key={idx} className="bg-white p-6 rounded-2xl shadow-lg border border-purple-100 text-center card-hover group">
+                <div key={idx} className="bg-white p-6 rounded-2xl shadow-lg border-2 border-purple-200 hover:border-purple-400 text-center card-hover group">
                   <i className={`fas ${item.icon} text-4xl block mb-3 group-hover:scale-110 transition-transform text-purple-600`}></i>
                   <span className="text-lg font-semibold text-gray-800">{item.name}</span>
                 </div>

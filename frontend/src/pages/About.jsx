@@ -33,7 +33,7 @@ function About() {
           </div>
           
           <div className="w-full sm:w-4/5 mx-auto">
-            <div className="bg-white/80 backdrop-blur-sm rounded-2xl sm:rounded-3xl shadow-xl p-5 sm:p-8 md:p-12 border border-purple-100 card-hover">
+            <div className="bg-white/80 backdrop-blur-sm rounded-2xl sm:rounded-3xl shadow-xl p-5 sm:p-8 md:p-12 border-2 border-purple-200 hover:border-purple-300 transition-all card-hover">
               <div className="space-y-6 sm:space-y-8">
                 <div className="flex items-center space-x-3 sm:space-x-4 mb-4 sm:mb-6">
                   <div className="w-12 h-12 sm:w-16 sm:h-16 bg-linear-to-br from-purple-500 to-pink-500 rounded-xl sm:rounded-2xl flex items-center justify-center shadow-lg">
@@ -47,7 +47,7 @@ function About() {
               </p>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6 pt-4 sm:pt-6">
                   {personalInfo.map((item, idx) => (
-                    <div key={idx} className="flex items-center p-3 sm:p-4 bg-purple-50 rounded-xl hover:bg-purple-100 transition-colors">
+                    <div key={idx} className="flex items-center p-3 sm:p-4 bg-purple-50/80 rounded-xl border-2 border-purple-200 hover:border-purple-300 hover:bg-purple-100 transition-colors shadow-xs">
                       <i className={`${item.icon} text-xl sm:text-2xl mr-3 sm:mr-4 text-purple-600`} />
                       <div>
                         <p className="text-xs sm:text-sm text-purple-600 font-medium">{item.label}</p>

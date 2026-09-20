@@ -32,7 +32,7 @@ function Contact() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center mb-16">
             <span className="text-purple-600 font-semibold text-lg tracking-wider uppercase">GET IN TOUCH</span>
-            <h2 className="text-5xl font-bold mt-2 bg-linear-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">Contact & Inquiries</h2>
+            <h2 className="text-5xl font-bold mt-2 bg-linear-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">Contact & Queries</h2>
             <div className="w-24 h-1 bg-linear-to-r from-purple-600 to-pink-600 mx-auto mt-4 rounded-full"></div>
             <p className="text-gray-600 mt-4 max-w-2xl mx-auto">Feel free to reach out for software engineering opportunities, technical projects, or academic inquiries. Contact me directly at <strong>saketh.p23@iiits.in</strong> or <strong>sakethpabbu.works@gmail.com</strong>.</p>
           </div>
